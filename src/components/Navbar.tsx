@@ -1,21 +1,40 @@
-function Navbar() {
+import { navItems } from '../data/navigation';
+import { useScrollSpy } from '../hooks/useScrollSpy';
+
+const ids = navItems.map((item) => item.id);
+
+export default function Navbar() {
+  const activeId = useScrollSpy(ids);
+
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-slate-700/50 bg-slate-900/95">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#home" className="font-semibold tracking-wide">
-          GABI
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-edge/60 bg-bg/80 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-shell items-center justify-between px-6 lg:px-10">
+        <a
+          href="#top"
+          className="font-display text-lg text-luna transition-opacity hover:opacity-70"
+          aria-label="Voltar ao topo"
+        >
+          ☾
         </a>
 
-        <div className="flex gap-6">
-          <a href="#about">Sobre</a>
-          <a href="#tech-stack">Tech Stack</a>
-          <a href="#experience">Experiência</a>
-          <a href="#interests">Interesses</a>
-          <a href="#contact">Contato</a>
-        </div>
+        <ul className="hidden items-center sm:flex">
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <a
+                href={`#${item.id}`}
+                className={`block rounded px-2.5 py-2 font-mono text-xs transition-colors ${
+                  activeId === item.id
+                    ? 'text-luna'
+                    : 'text-moon-muted hover:text-moon'
+                }`}
+                aria-current={activeId === item.id ? 'true' : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
-  )
+  );
 }
-
-export default Navbar

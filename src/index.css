@@ -1,10 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
-:root {
-  --color-bg: #171a1f;
-  --color-surface: #20252c;
-  --color-text: #e5e0d8;
-  --color-text-muted: #9da3aa;
-  --color-accent: #b76e79;
-  --color-accent-muted: #7f5059;
+@theme {
+  /* Fundos — por função, do mais profundo ao mais elevado */
+  --color-bg: #0F1319;
+  --color-surface: #171D26;
+  --color-elevated: #212A36;
+  --color-edge: #313D4D;
+
+  /* Texto */
+  --color-moon: #DCE3EC;
+  --color-moon-muted: #8D9AAB;
+
+  /* Acentos */
+  --color-luna: #E3C284;
+  --color-crt:  #6BA79B;
+  --color-copper: #C4886B;
+
+  /* Tipografia */
+  --font-display: "Chakra Petch", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --container-shell: 72rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-moon);
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background-color: var(--color-luna);
+    color: var(--color-bg);
+  }
+}
+
+@theme {
+  --animate-twinkle: twinkle 6s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50%      { opacity: 1; }
 }

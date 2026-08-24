@@ -1,62 +1,44 @@
-function Header() {
+import Starfield from './Starfield';
+
+export default function Header() {
   return (
-    <header
-      id="home"
-      className="relative flex min-h-screen items-center overflow-hidden px-6 pt-20"
-    >
-      <div
-        aria-hidden="true"
-        className="absolute right-10 top-32 text-6xl text-(--color-accent-muted) opacity-40"
-      >
-        ☾
-      </div>
+    <header className="relative flex min-h-[78vh] items-center overflow-hidden">
+      <Starfield />
 
       <div
+        className="pointer-events-none absolute -right-32 -top-40 h-160 w-160 rounded-full bg-luna/5 blur-3xl"
         aria-hidden="true"
-        className="absolute left-[15%] top-32 text-sm text-(--color-text-muted) opacity-60"
-      >
-        ✦
-      </div>
+      />
 
-      <div
-        aria-hidden="true"
-        className="absolute bottom-24 right-[20%] text-xs text-(--color-text-muted) opacity-50"
-      >
-        ✦
-      </div>
-
-      <div className="relative mx-auto w-full max-w-6xl">
-        <p className="mb-4 text-sm font-medium tracking-[0.2em] text-(--color-accent) uppercase">
-          Software Developer
+      <div className="relative mx-auto w-full max-w-shell px-6 lg:px-10">
+        <p className="mb-5 font-mono text-xs tracking-widest text-crt">
+          <span className="text-luna">☾</span> ready player one
         </p>
 
-        <h1 className="max-w-3xl text-5xl font-bold tracking-tight md:text-7xl">
-          Olá, eu sou Gabi.
+        <h1 className="font-display text-5xl leading-[1.05] sm:text-7xl lg:text-8xl">
+            Seu Nome
         </h1>
 
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-(--color-text-muted) md:text-xl">
-          Desenvolvedora de software apaixonada por tecnologia,
-          criatividade e por transformar ideias em coisas que funcionam.
+        <p className="mt-6 max-w-2xl text-xl text-moon-muted lg:text-2xl">
+            Uma linha sobre o que você faz e o que te move.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-4">
+        <div className="mt-10 flex flex-wrap items-center gap-4">
           <a
-            href="#experience"
-            className="rounded-lg bg-(--color-accent) px-5 py-3 text-sm font-medium text-(--color-bg) transition hover:opacity-85"
+            href="#projects"
+            className="rounded border border-luna/40 px-5 py-2.5 font-mono text-xs text-luna transition-colors hover:bg-luna/10"
           >
-            Ver experiência
+            ver projetos
           </a>
 
           <a
             href="#contact"
-            className="rounded-lg border border-(--color-accent-muted) px-5 py-3 text-sm font-medium text-(--color-text) transition hover:border-(--color-accent)"
+            className="font-mono text-xs text-moon-muted transition-colors hover:text-moon"
           >
-            Entre em contato
+            falar comigo →
           </a>
         </div>
       </div>
     </header>
-  )
+  );
 }
-
-export default Header

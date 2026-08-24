@@ -1,29 +1,36 @@
-import Navbar from './components/Navbar'
-import Header from './components/Header'
-import About from './components/About'
-import TechStack from './components/TechStack'
-import Experience from './components/Experience'
-import Interests from './components/Interests'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { useEffect } from 'react';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Section from './components/Section';
+import { navItems } from './data/navigation';
+import { printConsoleEgg } from './utils/consoleEgg';
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    printConsoleEgg();
+  }, []);
+
   return (
-    <div className="min-h-screen bg-(--color-bg) text-(--color-text)">
+    <>
       <Navbar />
 
-      <main>
+      <main id="top">
         <Header />
-        <About />
-        <TechStack />
-        <Experience />
-        <Interests />
-        <Contact />
+
+        {navItems.map((item, i) => (
+          <Section
+            key={item.id}
+            id={item.id}
+            index={String(i + 1).padStart(2, '0')}
+            title={item.label}
+          >
+            <p className="text-moon-muted">conteúdo em breve.</p>
+          </Section>
+        ))}
       </main>
 
       <Footer />
-    </div>
-  )
+    </>
+  );
 }
-
-export default App
