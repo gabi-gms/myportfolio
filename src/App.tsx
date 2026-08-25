@@ -36,7 +36,7 @@ export default function App() {
           <Projects />
         </Section>
 
-        <Section id="tech" index="02" eyebrow={ui.eyebrows.tech} title={ui.sectionTitles.tech} path="./stack" 
+        <Section id="tech" index="02" eyebrow={ui.eyebrows.tech} title={ui.sectionTitles.tech} path="./toolkit" 
           meta={`${techs.length} itens`} 
         >
           <TechStack />

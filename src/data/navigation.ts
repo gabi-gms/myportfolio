@@ -4,11 +4,11 @@ export interface NavItem {
 }
 
 export const navItems: NavItem[] = [
-  { id: 'about',      label: 'Sobre' },
-  { id: 'tech',       label: 'Tech stack' },
-  { id: 'projects',   label: 'Projetos' },
-  { id: 'experience', label: 'Experiência' },
-  { id: 'education',  label: 'Educação' },
-  { id: 'interests',  label: 'Interesses' },
-  { id: 'contact',    label: 'Contato' },
+  // { id: 'about',      label: 'Sobre' },
+  { id: 'tech',       label: 'Toolkit' },
+  { id: 'projects',   label: 'Projects' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'education',  label: 'Education' },
+  { id: 'interests',  label: 'Interests' },
+  { id: 'contact',    label: 'Contact' },
 ];
