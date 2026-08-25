@@ -8,6 +8,7 @@ import { printConsoleEgg } from './utils/consoleEgg';
 import About from './sections/About';
 import TechStack from './sections/TechStack';
 import Education from './sections/Education';
+import Experience from './sections/Experience';
 
 export default function App() {
   useEffect(() => {
@@ -30,9 +31,9 @@ export default function App() {
         </Section>
 
         <Section id="experience" index="03" title="Experiência">
-          <p className="text-moon-muted">em breve.</p>
+          <Experience />
         </Section>
-
+        
         <Section id="projects" index="04" title="Projetos">
           <p className="text-moon-muted">em breve.</p>
         </Section>

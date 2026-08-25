@@ -34,6 +34,18 @@ export const experiences: ExperienceItem[] = [
     ],
     techs: ['React', 'TypeScript'],
   },
+  {
+    role: 'Cargo',
+    company: 'Empresa',
+    period: '2024 — presente',
+    current: true,
+    description: 'O que você faz ali, em duas ou três linhas.',
+    highlights: [
+      'Uma entrega concreta com resultado.',
+      'Outra entrega concreta.',
+    ],
+    techs: ['React', 'TypeScript'],
+  },
 ];
 
 export const projects: ProjectItem[] = [
