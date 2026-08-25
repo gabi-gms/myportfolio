@@ -5,7 +5,6 @@ export interface TechItem {
 
 export interface ExperienceItem {
   role: string;
-  company: string;
   period: string;
   current?: boolean;
   description: string;

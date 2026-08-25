@@ -31,31 +31,31 @@ export default function App() {
         </Section> */}
 
         <Section  id="projects" index="04" eyebrow={ui.eyebrows.projects} title={ui.sectionTitles.projects} path="./projects "
-          meta={`${projects.length} projetos`} raised 
+          meta={`${projects.length} projetos`} 
         >
           <Projects />
         </Section>
 
         <Section id="tech" index="02" eyebrow={ui.eyebrows.tech} title={ui.sectionTitles.tech} path="./toolkit" 
-          meta={`${techs.length} itens`} 
+          meta={`${techs.length} itens`} raised
         >
           <TechStack />
         </Section>
 
-        <Section id="experience" index="03" eyebrow={ui.eyebrows.experience} title={ui.sectionTitles.experience} path="./experience" raised >
+        <Section id="experience" index="03" eyebrow={ui.eyebrows.experience} title={ui.sectionTitles.experience} path="./experience" >
           <Experience />
         </Section>
 
-        <Section id="education" index="05" eyebrow={ui.eyebrows.education} title={ui.sectionTitles.education} path="./education"
+        <Section id="education" index="05" eyebrow={ui.eyebrows.education} title={ui.sectionTitles.education} path="./education" raised
         >
           <Education />
         </Section>
 
-        <Section  id="interests"  index="06" eyebrow={ui.eyebrows.interests} title={ui.sectionTitles.interests} path="./interests" raised >
+        <Section  id="interests"  index="06" eyebrow={ui.eyebrows.interests} title={ui.sectionTitles.interests} path="./interests"  >
           <Interests />
         </Section>
 
-        <Section id="contact" index="07" eyebrow={ui.eyebrows.contact} title={ui.sectionTitles.contact} path="./contact">
+        <Section id="contact" index="07" eyebrow={ui.eyebrows.contact} title={ui.sectionTitles.contact} path="./contact" raised>
           <Contact />
         </Section>
       </main>

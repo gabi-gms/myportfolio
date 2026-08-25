@@ -76,28 +76,48 @@ export const techs: TechItem[] = [
 
 export const experiences: ExperienceItem[] = [
   {
-    role: 'Cargo',
-    company: 'Empresa',
-    period: '2024 — presente',
+    role: 'Chapter III',
+    period: '2026 — present',
     current: true,
     description: 'O que você faz ali, em duas ou três linhas.',
     highlights: [
       'Uma entrega concreta com resultado.',
       'Outra entrega concreta.',
     ],
-    techs: ['React', 'TypeScript'],
+    techs: ['Angular', 'TypeScript', 'Java', 'Docker', 'Git', 'Spring Boot'],
   },
   {
-    role: 'Cargo',
-    company: 'Empresa',
-    period: '2024 — presente',
-    current: true,
+    role: 'Chapter III',
+    period: '2024 — 2025',
+    current: false,
     description: 'O que você faz ali, em duas ou três linhas.',
     highlights: [
       'Uma entrega concreta com resultado.',
       'Outra entrega concreta.',
     ],
-    techs: ['React', 'TypeScript'],
+    techs: ['Python', 'Hardware', 'AI', 'Microeletronics', 'Verilog', 'UVM'],
+  },
+  {
+    role: 'Chapter II',
+    period: '2020 — 2024',
+    current: false,
+    description: 'O que você faz ali, em duas ou três linhas.',
+    highlights: [
+      'Uma entrega concreta com resultado.',
+      'Outra entrega concreta.',
+    ],
+    techs: ['Angular', 'TypeScript', 'Node.js', 'Docker', 'Git', 'React'],
+  },
+  {
+    role: 'Chapter I',
+    period: '2017 — 2020',
+    current: false,
+    description: 'O que você faz ali, em duas ou três linhas.',
+    highlights: [
+      'Uma entrega concreta com resultado.',
+      'Outra entrega concreta.',
+    ],
+    techs: ['JavaScript', 'HTML', 'CSS', 'Java', 'Git', 'Agile', 'Software'],
   },
 ];
 

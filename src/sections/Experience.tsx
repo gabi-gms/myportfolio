@@ -9,7 +9,7 @@ export default function Experience() {
       />
 
       {experiences.map((item) => (
-        <li key={`${item.company}-${item.period}`} className="relative">
+        <li key={`${item.period}`} className="relative">
           <span
             className={`absolute top-2 -left-10 grid h-3.5 w-3.5 -translate-x-1/2 place-items-center rounded-full border bg-bg lg:-left-16 ${
               item.current ? 'border-luna/50' : 'border-edge'
@@ -29,7 +29,6 @@ export default function Experience() {
               <h3 className="mt-3 font-display text-2xl leading-snug">
                 {item.role}
               </h3>
-              <p className="mt-2 font-mono text-sm text-crt">{item.company}</p>
             </div>
 
             <div>
