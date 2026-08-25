@@ -3,7 +3,7 @@ import { ui } from '../data/content';
 
 export default function Header() {
   return (
-    <header className="relative flex min-h-[78vh] items-center overflow-hidden">
+    <header className="relative flex min-h-screen items-center overflow-hidden border-b border-edge/60">
       <Starfield />
 
       <div
@@ -14,7 +14,7 @@ export default function Header() {
       <div className="relative mx-auto w-full max-w-shell px-6 lg:px-10">
         <p className="mb-5 font-mono text-xs tracking-widest text-crt">
           <span className="text-luna" aria-hidden="true">☾</span>{' '}
-          {ui.header.eyebrow}
+          {ui.eyebrows.header}
         </p>
 
         <h1 className="font-display text-5xl leading-[1.05] sm:text-7xl lg:text-8xl">

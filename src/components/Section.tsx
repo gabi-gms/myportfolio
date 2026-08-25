@@ -3,23 +3,45 @@ import type { ReactNode } from 'react';
 interface SectionProps {
   id: string;
   index: string;
+  eyebrow: string;
   title: string;
+  path: string;
+  meta?: string;
   children: ReactNode;
 }
 
-export default function Section({ id, index, title, children }: SectionProps) {
+export default function Section({
+  id,
+  index,
+  eyebrow,
+  title,
+  path,
+  meta,
+  children,
+}: SectionProps) {
   return (
-    <section id={id} className="scroll-mt-20 border-t border-edge/60 py-20">
-      <div className="mx-auto max-w-shell px-6 lg:px-10">
-        <header className="mb-10 flex items-baseline gap-4">
-          <span className="font-mono text-sm text-luna/70">{index}</span>
-          <h2 className="font-display text-2xl font-semibold tracking-wide">
+    <section id={id} className="scroll-mt-20 py-24 border-b border-edge/60">
+      <div className="relative overflow-hidden">
+        <div className="relative mx-auto max-w-shell px-6 pb-8 lg:px-10 ">
+          <div className="flex items-start justify-between gap-6">
+            <p className="font-mono text-xs tracking-[0.2em] text-moon-muted">
+              <span className="text-luna">{index}</span>{' '}
+              <span className="uppercase">{eyebrow}</span>
+            </p>
+
+            <div className="hidden text-right font-mono text-xs sm:block">
+              <p className="text-crt">{path}</p>
+              {meta && <p className="mt-1 text-edge">{meta}</p>}
+            </div>
+          </div>
+
+          <h2 className="mt-4 font-display text-4xl tracking-tight lg:text-5xl">
             {title}
           </h2>
-          <span className="h-px flex-1 bg-edge" aria-hidden="true" />
-        </header>
-        {children}
+        </div>
       </div>
+
+      <div className="mx-auto max-w-shell px-6 pt-14 lg:px-10">{children}</div>
     </section>
   );
 }
