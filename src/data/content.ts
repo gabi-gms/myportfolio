@@ -7,6 +7,50 @@ import type {
   ContactItem,
 } from './types';
 
+export const ui = {
+  sectionTitles: {
+    about: 'Sobre',
+    tech: 'Tech stack',
+    experience: 'Experiência',
+    projects: 'Projetos',
+    education: 'Educação',
+    interests: 'Interesses',
+    contact: 'Contato',
+  },
+  header: {
+    eyebrow: 'ready player one',
+    name: 'Seu Nome',
+    tagline: 'Uma linha sobre o que você faz e o que te move.',
+    ctaPrimary: 'ver projetos',
+    ctaSecondary: 'falar comigo',
+  },
+  about: {
+    statusLabel: 'status',
+    statusItems: [
+      'disponível para novos projetos',
+      'produtividade noturna',
+      'baseada em Minas Gerais',
+    ],
+  },
+  tech: {
+    categories: {
+      front: 'front-end',
+      back: 'back-end',
+      tools: 'ferramentas',
+      learning: 'aprendendo',
+    },
+  },
+  contact: {
+    intro:
+      'Aberta a conversas sobre projetos, oportunidades ou qualquer coisa que envolva construir algo bom.',
+    note: 'respondo mais rápido à noite',
+  },
+  footer: {
+    credit: 'feito com café e madrugada',
+    moonPrefix: 'hoje a lua está',
+  },
+};
+
 export const about = {
   intro: 'Um parágrafo sobre quem você é profissionalmente.',
   detail: 'Um segundo parágrafo — o que te move, como você trabalha.',

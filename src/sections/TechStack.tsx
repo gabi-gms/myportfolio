@@ -1,13 +1,6 @@
 import { useState } from 'react';
-import { techs } from '../data/content';
+import { techs, ui } from '../data/content';
 import type { TechItem } from '../data/types';
-
-const LABELS: Record<TechItem['category'], string> = {
-  front: 'front-end',
-  back: 'back-end',
-  tools: 'ferramentas',
-  learning: 'aprendendo',
-};
 
 const ORDER: TechItem['category'][] = ['front', 'back', 'tools', 'learning'];
 
@@ -24,7 +17,7 @@ export default function TechStack() {
       {grouped.map(({ category, items }) => (
         <div key={category} className="grid gap-4 sm:grid-cols-[10rem_1fr]">
           <h3 className="font-mono text-xs tracking-widest text-crt">
-            {LABELS[category]}
+            {ui.tech.categories[category]}
           </h3>
           <ul className="flex flex-wrap gap-2.5">
             {items.map((tech) => (

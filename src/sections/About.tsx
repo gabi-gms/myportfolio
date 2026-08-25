@@ -1,4 +1,4 @@
-import { about } from '../data/content';
+import { about, ui } from '../data/content';
 
 export default function About() {
   return (
@@ -9,25 +9,26 @@ export default function About() {
       </div>
 
       <aside className="relative rounded-lg border border-edge/60 bg-surface p-6">
-        <span
+                <span
           className="absolute -top-3 left-6 bg-bg px-2 font-mono text-[10px] tracking-widest text-crt"
           aria-hidden="true"
         >
-          status
+          {ui.about.statusLabel}
         </span>
         <ul className="space-y-3 font-mono text-xs text-moon-muted">
-          <li className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-crt" aria-hidden="true" />
-            disponível para novos projetos
-          </li>
-          <li className="flex items-center gap-2">
-            <span className="text-luna" aria-hidden="true">☾</span>
-            produtividade noturna
-          </li>
-          <li className="flex items-center gap-2">
-            <span className="text-copper" aria-hidden="true">◆</span>
-            baseada em Minas Gerais
-          </li>
+          {ui.about.statusItems.map((item, i) => (
+            <li key={item} className="flex items-center gap-2">
+              <span
+                className={
+                  ['h-1.5 w-1.5 rounded-full bg-crt', 'text-luna', 'text-copper'][i]
+                }
+                aria-hidden="true"
+              >
+                {['', '☾', '◆'][i]}
+              </span>
+              {item}
+            </li>
+          ))}
         </ul>
       </aside>
     </div>

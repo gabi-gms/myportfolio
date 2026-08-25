@@ -11,6 +11,7 @@ import Education from './sections/Education';
 import Experience from './sections/Experience';
 import Interests from './sections/Interests';
 import Contact from './sections/Contact';
+import Projects from './sections/Projects';
 
 export default function App() {
   useEffect(() => {
@@ -37,7 +38,7 @@ export default function App() {
         </Section>
 
         <Section id="projects" index="04" title="Projetos">
-          <p className="text-moon-muted">em breve.</p>
+          <Projects />
         </Section>
 
         <Section id="education" index="05" title="Educação">

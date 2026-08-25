@@ -1,16 +1,15 @@
-import { contacts } from '../data/content';
+import { contacts, ui } from '../data/content';
 
 export default function Contact() {
   return (
     <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
       <div>
         <p className="max-w-md text-lg leading-relaxed text-moon-muted">
-          Aberta a conversas sobre projetos, oportunidades ou qualquer coisa
-          que envolva construir algo bom.
+          {ui.contact.intro}
         </p>
         <p className="mt-6 font-mono text-xs text-crt">
           <span className="text-luna" aria-hidden="true">☾</span>{' '}
-          respondo mais rápido à noite
+          {ui.contact.note}
         </p>
       </div>
 

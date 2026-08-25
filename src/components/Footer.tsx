@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import Cat from './Cat';
 import { getMoonPhase } from '../utils/moonPhase';
+import { ui } from '../data/content';
 
 export default function Footer() {
   const moon = useMemo(() => getMoonPhase(), []);
@@ -11,11 +12,11 @@ export default function Footer() {
       <div className="mx-auto flex max-w-shell flex-col gap-6 px-6 lg:px-10 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="font-mono text-xs text-moon-muted">
-            © {year} — feito com café e madrugada
+            © {year} — {ui.footer.credit}
           </p>
           <p className="mt-2 font-mono text-xs text-moon-muted">
             <span className="text-luna" aria-hidden="true">{moon.glyph}</span>{' '}
-            <span>hoje a lua está {moon.name}</span>
+            <span>{ui.footer.moonPrefix} {moon.name}</span>
           </p>
         </div>
 
