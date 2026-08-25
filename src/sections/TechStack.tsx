@@ -16,7 +16,7 @@ export default function TechStack() {
     <div className="space-y-10">
       {grouped.map(({ category, items }) => (
         <div key={category} className="grid gap-4 sm:grid-cols-[10rem_1fr]">
-          <h3 className="font-mono text-xs tracking-widest text-crt">
+          <h3 className="font-mono text-xs tracking-widest text-secondary">
             {ui.tech.categories[category]}
           </h3>
           <ul className="flex flex-wrap gap-2.5">
@@ -34,7 +34,7 @@ export default function TechStack() {
 
       <button
         onClick={() => setFoundKey(true)}
-        className="group flex items-center gap-2 font-mono text-[10px] text-edge transition-colors hover:text-copper"
+        className="group flex items-center gap-2 font-mono text-[10px] text-edge transition-colors hover:text-accent"
         aria-label="chave escondida"
       >
         <span aria-hidden="true">⚷</span>

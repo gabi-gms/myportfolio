@@ -12,7 +12,7 @@ export default function Header() {
       />
 
       <div className="relative mx-auto w-full max-w-shell px-6 lg:px-10">
-        <p className="mb-5 font-mono text-xs tracking-widest text-crt">
+        <p className="mb-5 font-mono text-xs tracking-widest text-secondary">
           <span className="text-luna" aria-hidden="true">☾</span>{' '}
           {ui.eyebrows.header}
         </p>

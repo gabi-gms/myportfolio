@@ -10,7 +10,7 @@ export default function About() {
 
       <aside className="relative rounded-lg border border-edge/60 bg-surface p-6">
                 <span
-          className="absolute -top-3 left-6 bg-bg px-2 font-mono text-[10px] tracking-widest text-crt"
+          className="absolute -top-3 left-6 bg-bg px-2 font-mono text-[10px] tracking-widest text-secondary"
           aria-hidden="true"
         >
           {ui.about.statusLabel}
@@ -20,7 +20,7 @@ export default function About() {
             <li key={item} className="flex items-center gap-2">
               <span
                 className={
-                  ['h-1.5 w-1.5 rounded-full bg-crt', 'text-luna', 'text-copper'][i]
+                  ['h-1.5 w-1.5 rounded-full bg-secondary', 'text-luna', 'text-accent'][i]
                 }
                 aria-hidden="true"
               >

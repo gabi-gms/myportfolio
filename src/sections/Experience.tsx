@@ -46,7 +46,7 @@ export default function Experience() {
                       className="flex max-w-2xl gap-4 leading-relaxed text-moon-muted"
                     >
                       <span
-                        className="mt-[0.45rem] h-px w-3.5 shrink-0 bg-copper"
+                        className="mt-[0.45rem] h-px w-3.5 shrink-0 bg-secondary"
                         aria-hidden="true"
                       />
                       <span>{highlight}</span>

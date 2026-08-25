@@ -7,7 +7,7 @@ export default function Contact() {
         <p className="max-w-md text-lg leading-relaxed text-moon-muted">
           {ui.contact.intro}
         </p>
-        <p className="mt-6 font-mono text-xs text-crt">
+        <p className="mt-6 font-mono text-xs text-accent">
           <span className="text-luna" aria-hidden="true">☾</span>{' '}
           {ui.contact.note}
         </p>
@@ -22,7 +22,7 @@ export default function Contact() {
               rel={item.href.startsWith('http') ? 'noreferrer' : undefined}
               className="group flex items-center justify-between gap-6 py-5 transition-colors"
             >
-              <span className="font-mono text-xs tracking-widest text-moon-muted transition-colors group-hover:text-crt">
+              <span className="font-mono text-xs tracking-widest text-moon-muted transition-colors group-hover:text-secondary">
                 {item.label}
               </span>
               <span className="flex items-center gap-3 text-moon transition-colors group-hover:text-luna">

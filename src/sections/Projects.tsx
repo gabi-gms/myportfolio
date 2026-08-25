@@ -29,7 +29,7 @@ function ProjectCard({ project }: { project: ProjectItem }) {
           )}
         </div>
 
-        <p className="mt-2 font-mono text-xs text-crt">{project.tagline}</p>
+        <p className="mt-2 font-mono text-xs text-secondary">{project.tagline}</p>
 
         <p className="mt-5 max-w-2xl flex-1 leading-relaxed text-moon-muted">
           {project.description}
