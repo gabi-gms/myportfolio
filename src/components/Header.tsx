@@ -3,7 +3,7 @@ import { ui } from '../data/content';
 
 export default function Header() {
   return (
-    <header className="relative flex min-h-screen items-center overflow-hidden border-b border-edge/60">
+    <header className="relative flex min-h-screen items-center overflow-hidden border-b border-edge/20">
       <Starfield />
 
       <div
