@@ -9,6 +9,8 @@ import About from './sections/About';
 import TechStack from './sections/TechStack';
 import Education from './sections/Education';
 import Experience from './sections/Experience';
+import Interests from './sections/Interests';
+import Contact from './sections/Contact';
 
 export default function App() {
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function App() {
         <Section id="experience" index="03" title="Experiência">
           <Experience />
         </Section>
-        
+
         <Section id="projects" index="04" title="Projetos">
           <p className="text-moon-muted">em breve.</p>
         </Section>
@@ -43,11 +45,11 @@ export default function App() {
         </Section>
 
         <Section id="interests" index="06" title="Interesses">
-          <p className="text-moon-muted">em breve.</p>
+          <Interests />
         </Section>
 
         <Section id="contact" index="07" title="Contato">
-          <p className="text-moon-muted">em breve.</p>
+          <Contact />
         </Section>
       </main>
 
