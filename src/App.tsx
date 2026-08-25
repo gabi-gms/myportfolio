@@ -30,8 +30,8 @@ export default function App() {
           <About />
         </Section> */}
 
-        <Section  id="projects" index="04" eyebrow={ui.eyebrows.projects} title={ui.sectionTitles.projects} path="./projects"
-          meta={`${projects.length} projetos`}
+        <Section  id="projects" index="04" eyebrow={ui.eyebrows.projects} title={ui.sectionTitles.projects} path="./projects "
+          meta={`${projects.length} projetos`} raised 
         >
           <Projects />
         </Section>
@@ -42,7 +42,7 @@ export default function App() {
           <TechStack />
         </Section>
 
-        <Section id="experience" index="03" eyebrow={ui.eyebrows.experience} title={ui.sectionTitles.experience} path="./experience">
+        <Section id="experience" index="03" eyebrow={ui.eyebrows.experience} title={ui.sectionTitles.experience} path="./experience" raised >
           <Experience />
         </Section>
 
@@ -51,7 +51,7 @@ export default function App() {
           <Education />
         </Section>
 
-        <Section  id="interests"  index="06" eyebrow={ui.eyebrows.interests} title={ui.sectionTitles.interests} path="./interests" >
+        <Section  id="interests"  index="06" eyebrow={ui.eyebrows.interests} title={ui.sectionTitles.interests} path="./interests" raised >
           <Interests />
         </Section>
 

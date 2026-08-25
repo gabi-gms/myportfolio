@@ -7,6 +7,7 @@ interface SectionProps {
   title: string;
   path: string;
   meta?: string;
+  raised?: boolean;
   children: ReactNode;
 }
 
@@ -17,10 +18,13 @@ export default function Section({
   title,
   path,
   meta,
+  raised = false,
   children,
 }: SectionProps) {
   return (
-    <section id={id} className="scroll-mt-20 py-24 border-b border-edge/60">
+    <section
+      id={id}
+      className={`scroll-mt-20 py-24 border-b border-edge/10 ${raised ? 'bg-surface' : 'bg-bg'}`}>
       <div className="relative overflow-hidden">
         <div className="relative mx-auto max-w-shell px-6 pb-8 lg:px-10 ">
           <div className="flex items-start justify-between gap-6">
