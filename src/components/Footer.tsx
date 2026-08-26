@@ -1,5 +1,4 @@
 import { useMemo } from 'react';
-import Cat from './Cat';
 import { getMoonPhase } from '../utils/moonPhase';
 import { ui } from '../data/content';
 
@@ -14,9 +13,6 @@ export default function Footer() {
         <p className="font-mono text-xs tracking-wide uppercase text-moon-muted/60">
           © {year} {ui.footer.credit}
         </p>
-
-        <Cat />
-
         <p
           className="flex items-center gap-2 font-mono text-xs tracking-wide text-moon-muted"
           title={` ${moon.name}`}
