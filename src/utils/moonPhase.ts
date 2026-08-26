@@ -1,17 +1,22 @@
+import { CircleIcon, CircleHalfIcon, MoonIcon } from '@phosphor-icons/react';
+import type { Icon, IconWeight } from '@phosphor-icons/react';
+
 export interface MoonPhase {
-  glyph: string;
+  icon: Icon;
+  weight: IconWeight;
+  flip: boolean;
   name: string;
 }
 
 const PHASES: MoonPhase[] = [
-  { glyph: '●', name: 'lua nova' },
-  { glyph: '◔', name: 'crescente côncava' },
-  { glyph: '◑', name: 'quarto crescente' },
-  { glyph: '◕', name: 'crescente gibosa' },
-  { glyph: '○', name: 'lua cheia' },
-  { glyph: '◕', name: 'minguante gibosa' },
-  { glyph: '◐', name: 'quarto minguante' },
-  { glyph: '◔', name: 'minguante côncava' },
+  { icon: CircleIcon,     weight: 'regular', flip: false, name: 'new moon' },
+  { icon: MoonIcon,       weight: 'regular', flip: false, name: 'concave crescent' },
+  { icon: CircleHalfIcon, weight: 'fill',    flip: false, name: 'crescent moon' },
+  { icon: MoonIcon,       weight: 'fill',    flip: false, name: 'crescente gibosa' },
+  { icon: CircleIcon,     weight: 'fill',    flip: false, name: 'full moon' },
+  { icon: MoonIcon,       weight: 'fill',    flip: true,  name: 'waning gibbous' },
+  { icon: CircleHalfIcon, weight: 'fill',    flip: true,  name: 'last quarter' },
+  { icon: MoonIcon,       weight: 'regular', flip: true,  name: 'waning concave' },
 ];
 
 const SYNODIC_MONTH = 29.53058867;

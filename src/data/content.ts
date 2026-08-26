@@ -56,8 +56,7 @@ export const ui = {
     note: 'respondo mais rápido à noite',
   },
   footer: {
-    credit: 'feito com café e madrugada',
-    moonPrefix: 'hoje a lua está',
+    credit: 'Gabi Safira. All Rights Reserved.',
   },
 };
 
