@@ -2,27 +2,26 @@ import { interests } from '../data/content';
 
 export default function Interests() {
   return (
-    <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {interests.map((item) => (
+    <ul className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(16rem,100%),1fr))]">
+      {interests.map(({ icon: Icon, label }) => (
         <li
-          key={item.label}
-          className="group relative overflow-hidden rounded-lg border border-edge/60 bg-surface p-6 transition-colors hover:border-luna/30"
+          key={label}
+          className="group @container rounded-lg border border-edge/60 bg-surface p-7 transition-colors hover:border-secondary/30"
         >
-          <span
-            className="pointer-events-none absolute -right-6 -top-6 text-7xl text-luna/6 transition-transform duration-700 group-hover:scale-110"
-            aria-hidden="true"
-          >
-            {item.icon}
-          </span>
+          <div className="flex flex-col items-center gap-4 text-center @[22rem]:flex-row @[22rem]:items-start @[22rem]:gap-6 @[22rem]:text-left">
+            <Icon
+              className="shrink-0 text-4xl text-luna transition-all duration-400 group-hover:scale-120 group-hover:text-secondary @[22rem]:mt-1"
+              aria-hidden="true"
+            />
 
-          <div className="relative">
-            <span className="text-xl text-luna" aria-hidden="true">
-              {item.icon}
-            </span>
-            <h3 className="mt-3 font-display text-lg">{item.label}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-moon-muted">
-              {item.detail}
-            </p>
+            <div>
+              <h3 className="font-display text-lg text-luna transition-colors group-hover:text-secondary">
+                {label}
+              </h3>
+              {/* <p className="mt-2 text-sm leading-relaxed text-moon-muted">
+                {detail}
+              </p> */}
+            </div>
           </div>
         </li>
       ))}

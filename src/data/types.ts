@@ -1,3 +1,4 @@
+import type { IconType } from 'react-icons';
 export interface TechItem {
   name: string;
   category: 'front' | 'back' | 'tools' | 'learning';
@@ -30,9 +31,9 @@ export interface EducationItem {
 }
 
 export interface InterestItem {
-  icon: string;
+  icon: IconType;
   label: string;
-  detail: string;
+  // detail: string;
 }
 
 export interface ContactItem {
