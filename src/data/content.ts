@@ -6,7 +6,7 @@ import type {
   InterestItem,
   ContactItem,
 } from './types';
-import { PiBrain, PiRocket, PiAtom, PiDna } from 'react-icons/pi';
+import { PiRocket, PiAtom, PiBooks } from 'react-icons/pi';
 
 export const ui = {
   sectionTitles: {
@@ -141,10 +141,10 @@ export const education: EducationItem[] = [
 ];
 
 export const interests: InterestItem[] = [
-  { icon: PiDna,     label: 'Bioinformatics' },
   { icon: PiAtom,     label: 'Science & Health'},
-  { icon: PiBrain,     label: 'Neuroscience', },
   { icon: PiRocket,     label: 'Space Tech'},
+  { icon: PiBooks,     label: 'Literature & Writing'},
+  { icon: PiBooks,     label: 'Content Creation'},
   // { icon: PiRocket,     label: 'Space Tech',  detail: 'Uma frase sobre.' },
 
 ];

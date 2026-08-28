@@ -28,7 +28,7 @@ export default function Navbar() {
             <span className="text-moon transition-colors group-hover:text-secundary">
               Gabi
             </span>{'.'}
-            <span className="text-luna">Safira</span>
+            <span className="text-luna">Gomes</span>
           </span>
         </a>
 
