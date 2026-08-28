@@ -30,9 +30,10 @@ export const ui = {
   },
   header: {
     name: 'Hello, Gabi here!',
-    tagline: 'Uma linha sobre o que você faz e o que te move.',
-    ctaPrimary: 'ver projetos',
-    ctaSecondary: 'falar comigo',
+    tagline: 'Junior Fullstack Developer with hands-on experience building interfaces with Angular, React, TypeScript and Java. Uses Tailwind CSS and shadcn/ui in personal projects, with Git in daily workflow.',
+    ctaPrimary: 'Selected Projects',
+    ctaSecondary: 'Talk to me →',
+    role: 'Desenvolvedora Front-end',
   },
   about: {
     statusLabel: 'status',

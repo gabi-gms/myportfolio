@@ -20,8 +20,12 @@ function createStars(count: number): Star[] {
   }));
 }
 
-export default function Starfield() {
-  const stars = useMemo(() => createStars(200), []);
+interface StarfieldProps {
+  count?: number;
+}
+
+export default function Starfield({ count = 350 }: StarfieldProps) {
+  const stars = useMemo(() => createStars(count), [count]);
 
   return (
     <div
