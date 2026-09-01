@@ -80,10 +80,13 @@ export const experiences: ExperienceItem[] = [
     role: 'Chapter III',
     period: '2026 — present',
     current: true,
-    description: 'O que você faz ali, em duas ou três linhas.',
+    description: `Coming back to software meant coming back to a different industry than the one I left. 
+    AI reshaped how code gets written, and I decided that if I was going to rebuild, 
+    I would rebuild wider: not just the interface, but everything behind it.`,
     highlights: [
-      'Uma entrega concreta com resultado.',
-      'Outra entrega concreta.',
+      'Expanding into full stack development with Java and Spring Boot alongside Angular.',
+      'Building personal projects to put the new stack into practice.',
+      'Serving as an contribuitor at the He4rt Developers community and a staff at the ConexãoTI community.',
     ],
     techs: ['Angular', 'TypeScript', 'Java', 'Docker', 'Git', 'Spring Boot'],
   },
@@ -91,10 +94,13 @@ export const experiences: ExperienceItem[] = [
     role: 'Chapter III',
     period: '2024 — 2025',
     current: false,
-    description: 'O que você faz ali, em duas ou três linhas.',
+    description: `I spent a year in microelectronics, working with hardware architecture instead of interfaces. 
+    It taught me what happens underneath the software I write, and it also made something clear: 
+    what I actually want is to build systems people use.`,
     highlights: [
-      'Uma entrega concreta com resultado.',
-      'Outra entrega concreta.',
+      'Selected for the hands-on phase of the CI Inovador Residency (UFRGS Hub).',
+      'Joined a three-person team developing a SoC with a RISC-V processor and a convolutional neural network accelerator, delivered on schedule.',
+      'Conducted two months of applied RISC-V research at Universidad Carlos III de Madrid, Spain',
     ],
     techs: ['Python', 'Hardware', 'AI', 'Microeletronics', 'Verilog', 'UVM'],
   },
@@ -102,10 +108,12 @@ export const experiences: ExperienceItem[] = [
     role: 'Chapter II',
     period: '2020 — 2024',
     current: false,
-    description: 'O que você faz ali, em duas ou três linhas.',
+    description: `My first years in the industry were spent on real systems with real users. 
+    I migrated legacy screens, fixed production bugs, and learned what it takes to ship under a deadline with a small team. 
+    I also learned, the hard way, that a good salary means nothing without structure to grow in.`,
     highlights: [
-      'Uma entrega concreta com resultado.',
-      'Outra entrega concreta.',
+      'Promoted from intern to Junior Developer in 5 months in my first job.',
+      'Migrated legacy system screens to Angular integrated with a Node.js back-end via REST APIs, delivering the decommissioning project on schedule.',
     ],
     techs: ['Angular', 'TypeScript', 'Node.js', 'Docker', 'Git', 'React'],
   },
@@ -113,10 +121,14 @@ export const experiences: ExperienceItem[] = [
     role: 'Chapter I',
     period: '2017 — 2020',
     current: false,
-    description: 'O que você faz ali, em duas ou três linhas.',
+    description: `I started out heading toward law school, passed the entrance exam, 
+    and walked away from it before enrolling. After six months of searching, I found Information Systems. 
+    I had been messing with HTML, CSS and JavaScript since my teens without ever considering it a career, 
+    and it turned out to be exactly where I belonged.`,
     highlights: [
-      'Uma entrega concreta com resultado.',
-      'Outra entrega concreta.',
+      'Started the Information Systems program at Universidade de Uberaba.',
+      'Built foundations in programming logic, Java, SQL, front-end, and agile methodologies.',
+      'Landed my first internship in early 2020.',
     ],
     techs: ['JavaScript', 'HTML', 'CSS', 'Java', 'Git', 'Agile', 'Software'],
   },
