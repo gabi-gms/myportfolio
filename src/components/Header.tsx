@@ -26,11 +26,11 @@ export default function Header() {
               {ui.eyebrows.header}
             </p>
 
-            <h1 className="font-display text-5xl leading-[1.05] sm:text-5xl lg:text-8xl">
+            <h1 className="font-display text-5xl leading-[1.05] sm:text-5xl lg:text-7xl">
               {ui.header.name}
             </h1>
 
-            <p className="mt-4 max-w-lg text-[1.125rem] text-moon-muted">
+            <p className="mt-4 text-[1.125rem] text-moon-muted">
               {ui.header.tagline}
             </p>
 

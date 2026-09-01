@@ -1,4 +1,5 @@
 import type { IconType } from 'react-icons';
+import type { Icon } from '@phosphor-icons/react';
 export interface TechItem {
   name: string;
   category: 'front' | 'back' | 'tools' | 'learning';
@@ -36,8 +37,8 @@ export interface InterestItem {
   // detail: string;
 }
 
-export interface ContactItem {
+export interface Social {
   label: string;
-  value: string;
   href: string;
+  icon: IconType | Icon;
 }

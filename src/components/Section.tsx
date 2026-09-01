@@ -45,7 +45,7 @@ export default function Section({
         </div>
       </div>
 
-      <div className="mx-auto max-w-shell px-6 pt-14 lg:px-10">{children}</div>
+      <div className="mx-auto max-w-shell px-6 pt-8 lg:px-10">{children}</div>
     </section>
   );
 }

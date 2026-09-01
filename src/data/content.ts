@@ -4,9 +4,10 @@ import type {
   ProjectItem,
   EducationItem,
   InterestItem,
-  ContactItem,
+  Social,
 } from './types';
-import { PiRocket, PiAtom, PiBooks } from 'react-icons/pi';
+import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiBehanceLogo } from 'react-icons/pi';
+
 
 export const ui = {
   sectionTitles: {
@@ -51,13 +52,15 @@ export const ui = {
       learning: 'aprendendo',
     },
   },
-  contact: {
+    contact: {
     intro:
       'Aberta a conversas sobre projetos, oportunidades ou qualquer coisa que envolva construir algo bom.',
     note: 'respondo mais rápido à noite',
+    emailCta: 'enviar e-mail',
+    resumeCta: 'baixar currículo',
   },
   footer: {
-    credit: 'Gabi Safira. All Rights Reserved.',
+    credit: 'Gabi Leonor. All Rights Reserved.',
   },
 };
 
@@ -157,13 +160,17 @@ export const interests: InterestItem[] = [
   { icon: PiAtom,     label: 'Science & Health'},
   { icon: PiRocket,     label: 'Space Tech'},
   { icon: PiBooks,     label: 'Literature & Writing'},
-  { icon: PiBooks,     label: 'Content Creation'},
+  { icon: PiCamera,     label: 'Content Creation'},
   // { icon: PiRocket,     label: 'Space Tech',  detail: 'Uma frase sobre.' },
 
 ];
 
-export const contacts: ContactItem[] = [
-  { label: 'email',    value: 'voce@email.com',      href: 'mailto:voce@email.com' },
-  { label: 'github',   value: 'github.com/usuario',  href: 'https://github.com/usuario' },
-  { label: 'linkedin', value: 'in/usuario',          href: 'https://linkedin.com/in/usuario' },
+export const email = 'seu@email.com';
+export const resumeUrl = '/curriculo.pdf';
+
+export const socials: Social[] = [
+  { label: 'github', href: 'https://github.com/usuario', icon: PiGithubLogo },
+  { label: 'linkedin', href: 'https://linkedin.com/in/usuario', icon: PiLinkedinLogo },
+  { label: 'instagram', href: 'https://instagram.com/usuario', icon: PiInstagramLogo },
+  { label: 'behance', href: 'https://behance.net/usuario', icon: PiBehanceLogo },
 ];
