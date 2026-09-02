@@ -6,7 +6,7 @@ import type {
   InterestItem,
   Social,
 } from './types';
-import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiBehanceLogo } from 'react-icons/pi';
+import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo } from 'react-icons/pi';
 
 
 export const ui = {
@@ -32,8 +32,8 @@ export const ui = {
   header: {
     name: 'Hello, Gabi here!',
     tagline: 'Junior Fullstack Developer with hands-on experience building interfaces with Angular, React, TypeScript and Java. Uses Tailwind CSS and shadcn/ui in personal projects, with Git in daily workflow.',
-    ctaPrimary: 'Selected Projects',
-    ctaSecondary: 'Talk to me →',
+    ctaPrimary: 'selected projects',
+    ctaSecondary: 'talk to me →',
     role: 'Desenvolvedora Front-end',
   },
   about: {
@@ -52,12 +52,13 @@ export const ui = {
       learning: 'aprendendo',
     },
   },
-    contact: {
+  contact: {
     intro:
-      'Aberta a conversas sobre projetos, oportunidades ou qualquer coisa que envolva construir algo bom.',
-    note: 'respondo mais rápido à noite',
-    emailCta: 'enviar e-mail',
-    resumeCta: 'baixar currículo',
+      'Open to conversations about projects, opportunities, or anything that involves building something good.',
+    note: 'I reply faster at night',
+    resumeCta: 'download resume',
+    emailCta: 'send an email',
+    socialsLabel: 'socials',
   },
   footer: {
     credit: 'Gabi Leonor. All Rights Reserved.',
@@ -165,12 +166,12 @@ export const interests: InterestItem[] = [
 
 ];
 
-export const email = 'seu@email.com';
+export const email = 'gabi.gomes.gr@gmail.com';
 export const resumeUrl = '/curriculo.pdf';
 
 export const socials: Social[] = [
-  { label: 'github', href: 'https://github.com/usuario', icon: PiGithubLogo },
-  { label: 'linkedin', href: 'https://linkedin.com/in/usuario', icon: PiLinkedinLogo },
+  { label: 'github', href: 'https://github.com/gabi-gms', icon: PiGithubLogo },
+  { label: 'linkedin', href: 'https://linkedin.com/in/gabriella-gomes-ar/', icon: PiLinkedinLogo },
   { label: 'instagram', href: 'https://instagram.com/usuario', icon: PiInstagramLogo },
-  { label: 'behance', href: 'https://behance.net/usuario', icon: PiBehanceLogo },
+  { label: 'youtube', href: 'https://youtube.com/usuario', icon: PiYoutubeLogo },
 ];

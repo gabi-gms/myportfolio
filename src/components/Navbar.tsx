@@ -24,7 +24,7 @@ export default function Navbar() {
             className="h-5 w-5 text-luna transition-all duration-300 group-hover:rotate-12 group-hover:text-secundary"
             aria-hidden="true"
           />
-          <span className="font-display text-sm font-semibold uppercase tracking-[0.18em]">
+          <span className="font-mono text-sm font-bold uppercase tracking-[0.18em]">
             <span className="text-moon transition-colors group-hover:text-secundary">
               Gabi
             </span>{'.'}

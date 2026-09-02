@@ -15,12 +15,9 @@ export default function Interests() {
             />
 
             <div>
-              <h3 className="font-display text-lg text-luna transition-colors group-hover:text-secondary">
+              <h3 className="font-mono uppercase text-sm text-luna transition-colors group-hover:text-secondary">
                 {label}
               </h3>
-              {/* <p className="mt-2 text-sm leading-relaxed text-moon-muted">
-                {detail}
-              </p> */}
             </div>
           </div>
         </li>

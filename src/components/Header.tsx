@@ -2,6 +2,7 @@ import { MoonIcon } from '@phosphor-icons/react';
 import Starfield from './Starfield';
 import selene from '../assets/selene.svg';
 import { ui } from '../data/content';
+import ActionLink from './ActionLink';
 
 export default function Header() {
   return (
@@ -34,19 +35,11 @@ export default function Header() {
               {ui.header.tagline}
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-3">
-              
-              <a  href="#projects"
-                className="rounded-md border border-luna/50 bg-luna/10 px-6 py-3 font-mono text-sm tracking-wide text-luna transition-colors hover:border-secondary/70 hover:bg-secondary/10 hover:text-secondary"
-              >
-                {ui.header.ctaPrimary}
-              </a>
-              
-              <a  href="#contact"
-                className="rounded-md border border-edge bg-elevated/60 px-6 py-3 font-mono text-sm tracking-wide text-moon transition-colors hover:border-accent/70 hover:bg-accent/10"
-              >
-                {ui.header.ctaSecondary}
-              </a>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <ActionLink href="#projects">{ui.header.ctaPrimary}</ActionLink>
+              <ActionLink href="#contact" variant="ghost">
+                {ui.header.ctaSecondary} →
+              </ActionLink>
             </div>
           </div>
         </div>
