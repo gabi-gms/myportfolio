@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-edge/60 bg-bg/80 backdrop-blur-md">
-      <div className="mx-auto grid h-16 max-w-shell grid-cols-[1fr_auto_1fr] items-center gap-4 px-6 lg:px-10">
+      <div className="mx-auto grid h-16 max-w-8xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-6 lg:px-10">
         <a
                   
           href="#top"

@@ -171,7 +171,7 @@ export const resumeUrl = '/curriculo.pdf';
 
 export const socials: Social[] = [
   { label: 'github', href: 'https://github.com/gabi-gms', icon: PiGithubLogo },
-  { label: 'linkedin', href: 'https://linkedin.com/in/gabriella-gomes-ar/', icon: PiLinkedinLogo },
-  { label: 'instagram', href: 'https://instagram.com/usuario', icon: PiInstagramLogo },
-  { label: 'youtube', href: 'https://youtube.com/usuario', icon: PiYoutubeLogo },
+  { label: 'linkedin', href: 'https://linkedin.com/in/gabi-gms', icon: PiLinkedinLogo },
+  { label: 'instagram', href: 'https://instagram.com/gabileonor.dev', icon: PiInstagramLogo },
+  { label: 'youtube', href: 'https://youtube.com/@agabileonor', icon: PiYoutubeLogo },
 ];
