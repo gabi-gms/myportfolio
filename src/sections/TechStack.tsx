@@ -2,44 +2,64 @@ import { useState } from 'react';
 import { techs, ui } from '../data/content';
 import type { TechItem } from '../data/types';
 
-const ORDER: TechItem['category'][] = ['front', 'back', 'tools', 'learning'];
+type Filter = TechItem['category'] | 'all';
+
+const FILTERS: Filter[] = ['all', 'front', 'back', 'tools', 'learning'];
 
 export default function TechStack() {
+  const [filter, setFilter] = useState<Filter>('all');
   const [foundKey, setFoundKey] = useState(false);
 
-  const grouped = ORDER.map((category) => ({
-    category,
-    items: techs.filter((tech) => tech.category === category),
-  })).filter((group) => group.items.length > 0);
+  const visible =
+    filter === 'all' ? techs : techs.filter((tech) => tech.category === filter);
 
   return (
-    <div className="space-y-10">
-      {grouped.map(({ category, items }) => (
-        <div key={category} className="grid gap-4 sm:grid-cols-[10rem_1fr]">
-          <h3 className="font-mono text-xs tracking-widest text-secondary">
-            {ui.tech.categories[category]}
-          </h3>
-          <ul className="flex flex-wrap gap-2.5">
-            {items.map((tech) => (
-              <li
-                key={tech.name}
-                className="rounded border border-edge/60 bg-surface px-3.5 py-2 font-mono text-xs text-moon transition-colors hover:border-luna/40 hover:text-luna"
-              >
-                {tech.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+    <div className="space-y-8">
+      <div className="flex flex-wrap gap-2">
+        {FILTERS.map((key) => {
+          const active = filter === key;
+          return (
+            <button
+              key={key}
+              onClick={() => setFilter(key)}
+              aria-pressed={active}
+              className={`rounded-full border px-4 py-2 font-mono text-[0.7rem] uppercase tracking-[0.18em] transition-colors ${
+                active
+                  ? 'border-secondary/50 bg-secondary/10 text-secondary'
+                  : 'border-edge/60 bg-surface text-moon-muted hover:border-secondary/30 hover:text-moon'
+              }`}
+            >
+              {key === 'all' ? ui.tech.all : ui.tech.categories[key]}
+            </button>
+          );
+        })}
+      </div>
+
+      <ul className="grid grid-cols-[repeat(auto-fit,minmax(min(9rem,100%),1fr))] gap-3">
+        {visible.map(({ icon: Icon, name }) => (
+          <li
+            key={name}
+            className="group flex flex-col items-center gap-3 rounded-lg border border-edge/60 bg-surface p-5 text-center transition-colors hover:border-secondary/30"
+          >
+            <Icon
+              className="shrink-0 text-3xl text-luna transition-all duration-400 group-hover:scale-120 group-hover:text-secondary"
+              aria-hidden="true"
+            />
+            <span className="font-mono uppercase text-sm text-luna transition-colors group-hover:text-secondary">
+              {name}
+            </span>
+          </li>
+        ))}
+      </ul>
 
       <button
         onClick={() => setFoundKey(true)}
-        className="group flex items-center gap-2 font-mono text-[10px] text-edge transition-colors hover:text-accent"
-        aria-label="chave escondida"
+        className="group flex items-center gap-2 font-mono text-[10px] text-edge transition-colors hover:text-copper"
+        aria-label="hidden key"
       >
         <span aria-hidden="true">⚷</span>
         <span className="opacity-0 transition-opacity group-hover:opacity-100">
-          {foundKey ? 'chave de cobre obtida' : 'pegar'}
+          {foundKey ? 'copper key obtained' : 'take'}
         </span>
       </button>
     </div>

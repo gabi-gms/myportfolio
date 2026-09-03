@@ -3,6 +3,7 @@ import type { Icon } from '@phosphor-icons/react';
 export interface TechItem {
   name: string;
   category: 'front' | 'back' | 'tools' | 'learning';
+  icon: IconType;
 }
 
 export interface ExperienceItem {

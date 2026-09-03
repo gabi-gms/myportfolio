@@ -6,7 +6,13 @@ import type {
   InterestItem,
   Social,
 } from './types';
-import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo } from 'react-icons/pi';
+import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo, PiCoffee, PiRepeat, PiBrain, PiDatabase, PiBriefcase } from 'react-icons/pi';
+import {
+  SiAngular, SiReact, SiNextdotjs, SiTypescript, SiJavascript,
+  SiHtml5, SiCss, SiTailwindcss,
+  SiSpringboot, SiNodedotjs, SiPython, SiPostgresql, SiMysql,
+  SiDocker, SiGit, SiGithub, SiNotion, SiObsidian, SiNpm
+} from 'react-icons/si';
 
 
 export const ui = {
@@ -45,11 +51,12 @@ export const ui = {
     ],
   },
   tech: {
+    all: 'all',
     categories: {
       front: 'front-end',
       back: 'back-end',
-      tools: 'ferramentas',
-      learning: 'aprendendo',
+      tools: 'tools',
+      learning: 'learning',
     },
   },
   contact: {
@@ -71,12 +78,34 @@ export const about = {
 };
 
 export const techs: TechItem[] = [
-  { name: 'React',      category: 'front' },
-  { name: 'TypeScript', category: 'front' },
-  { name: 'Tailwind',   category: 'front' },
-  { name: 'Node.js',    category: 'back' },
-  { name: 'Git',        category: 'tools' },
-  { name: 'Figma',      category: 'tools' },
+  { name: 'Angular',        category: 'front',    icon: SiAngular },
+  { name: 'React',          category: 'front',    icon: SiReact },
+  { name: 'Next.js',        category: 'front',    icon: SiNextdotjs },
+  { name: 'TypeScript',     category: 'front',    icon: SiTypescript },
+  { name: 'JavaScript',     category: 'front',    icon: SiJavascript },
+  { name: 'HTML',           category: 'front',    icon: SiHtml5 },
+  { name: 'CSS',            category: 'front',    icon: SiCss },
+  { name: 'Tailwind CSS',   category: 'front',    icon: SiTailwindcss },
+
+  { name: 'Java',           category: 'back',     icon: PiCoffee },
+  { name: 'Spring Boot',    category: 'back',     icon: SiSpringboot },
+  { name: 'Node.js',        category: 'back',     icon: SiNodedotjs },
+  { name: 'Python',         category: 'back',     icon: SiPython },
+  { name: 'PostgreSQL',     category: 'back',     icon: SiPostgresql },
+  { name: 'MySQL',          category: 'back',     icon: SiMysql },
+
+  { name: 'Git',            category: 'tools',    icon: SiGit },
+  { name: 'GitHub',         category: 'tools',    icon: SiGithub },
+  { name: 'Docker',         category: 'tools',    icon: SiDocker },
+  { name: 'Notion',         category: 'tools',    icon: SiNotion },
+  { name: 'Obsidian',       category: 'tools',    icon: SiObsidian },
+  { name: 'npm',            category: 'tools',    icon: SiNpm },
+
+  { name: 'agile',          category: 'learning',    icon: PiRepeat },
+  { name: 'ai',             category: 'learning',    icon: PiBrain },
+  { name: 'data science',   category: 'learning',    icon: PiDatabase },
+  { name: 'p. management', category: 'learning',    icon: PiBriefcase },
+
 ];
 
 export const experiences: ExperienceItem[] = [
