@@ -13,7 +13,7 @@ function createStars(count: number): Star[] {
   return Array.from({ length: count }, () => ({
     left: `${Math.random() * 100}%`,
     top: `${Math.random() * 100}%`,
-    size: Math.random() < 0.85 ? 1 : 2,
+    size: Math.random() < 0.85 ? 1.2 : 2.2,
     delay: `${Math.random() * 4}s`,
     duration: `${2 + Math.random() * 2}s`,
     opacity: 0.25 + Math.random() * 0.5,
@@ -24,7 +24,7 @@ interface StarfieldProps {
   count?: number;
 }
 
-export default function Starfield({ count = 350 }: StarfieldProps) {
+export default function Starfield({ count = 500 }: StarfieldProps) {
   const stars = useMemo(() => createStars(count), [count]);
 
   return (
@@ -35,7 +35,7 @@ export default function Starfield({ count = 350 }: StarfieldProps) {
       {stars.map((star, i) => (
         <span
           key={i}
-          className="absolute rounded-full bg-moon motion-safe:animate-twinkle"
+          className="absolute rounded-full bg-luna motion-safe:animate-twinkle"
           style={{
             left: star.left,
             top: star.top,
