@@ -2,7 +2,7 @@ import type { AnchorHTMLAttributes } from 'react';
 import type { Icon } from '@phosphor-icons/react';
 
 type ActionLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
-  variant?: 'primary' | 'ghost';
+  variant?: 'primary' | 'secondary';
   icon?: Icon;
 };
 
@@ -11,9 +11,9 @@ const base =
 
 const variants = {
   primary:
-    'border-luna/50 bg-luna/10 text-luna hover:border-luna/70 hover:bg-luna/20',
-  ghost:
-    'border-edge bg-elevated/60 text-moon hover:border-moon-muted hover:bg-elevated',
+    'border-luna bg-luna text-bg hover:border-secondary transition-all duration-400 transition-colors hover:bg-secondary',
+  secondary:
+    'border-accent text-accent transition-all duration-400 transition-colors hover:border-luna hover:bg-luna-muted hover:text-luna',
 } as const;
 
 export default function ActionLink({

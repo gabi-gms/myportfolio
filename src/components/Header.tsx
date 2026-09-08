@@ -37,8 +37,8 @@ export default function Header() {
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <ActionLink href="#projects">{ui.header.ctaPrimary}</ActionLink>
-              <ActionLink href="#contact" variant="ghost">
-                {ui.header.ctaSecondary} →
+              <ActionLink href="#contact" variant="secondary">
+                {ui.header.ctaSecondary}
               </ActionLink>
             </div>
           </div>

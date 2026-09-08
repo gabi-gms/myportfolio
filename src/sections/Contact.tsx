@@ -14,7 +14,7 @@ export default function Contact() {
           <ActionLink href={resumeUrl} download  icon={DownloadSimpleIcon}>
             {ui.contact.resumeCta}
           </ActionLink>
-          <ActionLink href={`mailto:${email}`} variant="ghost" icon={EnvelopeSimpleIcon}>
+          <ActionLink href={`mailto:${email}`} variant="secondary" icon={EnvelopeSimpleIcon}>
             {ui.contact.emailCta}
           </ActionLink>
         </div>
