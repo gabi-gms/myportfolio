@@ -8,7 +8,7 @@ export interface TechItem {
 }
 
 export interface ExperienceItem {
-  role: string;
+  title: string;
   period: string;
   current?: boolean;
   description: string;

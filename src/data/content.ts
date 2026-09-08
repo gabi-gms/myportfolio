@@ -107,7 +107,7 @@ export const techs: TechItem[] = [
 
 export const experiences: ExperienceItem[] = [
   {
-    role: 'Chapter III',
+    title: 'Chapter IV',
     period: '2026 — present',
     current: true,
     description: `Coming back to software meant coming back to a different industry than the one I left. 
@@ -121,7 +121,7 @@ export const experiences: ExperienceItem[] = [
     techs: ['Angular', 'TypeScript', 'Java', 'Docker', 'Git', 'Spring Boot'],
   },
   {
-    role: 'Chapter III',
+    title: 'Chapter III',
     period: '2024 — 2025',
     current: false,
     description: `I spent a year in microelectronics, working with hardware architecture instead of interfaces. 
@@ -135,7 +135,7 @@ export const experiences: ExperienceItem[] = [
     techs: ['Python', 'Hardware', 'AI', 'Microeletronics', 'Verilog', 'UVM'],
   },
   {
-    role: 'Chapter II',
+    title: 'Chapter II',
     period: '2020 — 2024',
     current: false,
     description: `My first years in the industry were spent on real systems with real users. 
@@ -148,7 +148,7 @@ export const experiences: ExperienceItem[] = [
     techs: ['Angular', 'TypeScript', 'Node.js', 'Docker', 'Git', 'React'],
   },
   {
-    role: 'Chapter I',
+    title: 'Chapter I',
     period: '2017 — 2020',
     current: false,
     description: `I started out heading toward law school, passed the entrance exam, 

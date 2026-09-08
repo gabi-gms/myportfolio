@@ -27,7 +27,7 @@ export default function Experience() {
             <div>
               <p className="font-mono text-sm text-luna/80">{item.period}</p>
               <h3 className="mt-3 font-display text-2xl leading-snug">
-                {item.role}
+                {item.title}
               </h3>
             </div>
 
