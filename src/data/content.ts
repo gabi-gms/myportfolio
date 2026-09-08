@@ -6,7 +6,7 @@ import type {
   InterestItem,
   Social,
 } from './types';
-import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo, PiCoffee, PiRepeat, PiBrain, PiDatabase, PiBriefcase } from 'react-icons/pi';
+import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo, PiCoffee, PiRepeat, PiBrain, } from 'react-icons/pi';
 import {
   SiAngular, SiReact, SiNextdotjs, SiTypescript, SiJavascript,
   SiHtml5, SiCss, SiTailwindcss,
@@ -51,12 +51,11 @@ export const ui = {
     ],
   },
   tech: {
-    all: 'all',
+    main: 'main',
     categories: {
-      front: 'front-end',
-      back: 'back-end',
+      front: 'frontend',
+      back: 'backend',
       tools: 'tools',
-      learning: 'learning',
     },
   },
   contact: {
@@ -78,21 +77,22 @@ export const about = {
 };
 
 export const techs: TechItem[] = [
-  { name: 'Angular',        category: 'front',    icon: SiAngular },
+  { name: 'Angular',        category: 'front',    icon: SiAngular, main: true },
   { name: 'React',          category: 'front',    icon: SiReact },
   { name: 'Next.js',        category: 'front',    icon: SiNextdotjs },
   { name: 'TypeScript',     category: 'front',    icon: SiTypescript },
   { name: 'JavaScript',     category: 'front',    icon: SiJavascript },
   { name: 'HTML',           category: 'front',    icon: SiHtml5 },
   { name: 'CSS',            category: 'front',    icon: SiCss },
-  { name: 'Tailwind CSS',   category: 'front',    icon: SiTailwindcss },
+  { name: 'Tailwind CSS',   category: 'front',    icon: SiTailwindcss, main: true },
 
-  { name: 'Java',           category: 'back',     icon: PiCoffee },
-  { name: 'Spring Boot',    category: 'back',     icon: SiSpringboot },
+  { name: 'Java',           category: 'back',     icon: PiCoffee, main: true },
+  { name: 'Spring Boot',    category: 'back',     icon: SiSpringboot, main: true },
   { name: 'Node.js',        category: 'back',     icon: SiNodedotjs },
-  { name: 'Python',         category: 'back',     icon: SiPython },
-  { name: 'PostgreSQL',     category: 'back',     icon: SiPostgresql },
+  { name: 'Python',         category: 'back',     icon: SiPython, main: true },
+  { name: 'PostgreSQL',     category: 'back',     icon: SiPostgresql, main: true },
   { name: 'MySQL',          category: 'back',     icon: SiMysql },
+  { name: 'AI',             category: 'back',     icon: PiBrain },
 
   { name: 'Git',            category: 'tools',    icon: SiGit },
   { name: 'GitHub',         category: 'tools',    icon: SiGithub },
@@ -100,11 +100,8 @@ export const techs: TechItem[] = [
   { name: 'Notion',         category: 'tools',    icon: SiNotion },
   { name: 'Obsidian',       category: 'tools',    icon: SiObsidian },
   { name: 'npm',            category: 'tools',    icon: SiNpm },
-
-  { name: 'agile',          category: 'learning',    icon: PiRepeat },
-  { name: 'ai',             category: 'learning',    icon: PiBrain },
-  { name: 'data science',   category: 'learning',    icon: PiDatabase },
-  { name: 'p. management', category: 'learning',    icon: PiBriefcase },
+  { name: 'agile',          category: 'tools',    icon: PiRepeat },
+  
 
 ];
 
@@ -118,7 +115,7 @@ export const experiences: ExperienceItem[] = [
     I would rebuild wider: not just the interface, but everything behind it.`,
     highlights: [
       'Expanding into full stack development with Java and Spring Boot alongside Angular.',
-      'Building personal projects to put the new stack into practice.',
+      'Building ,personal projects to put the new stack into practice.',
       'Serving as an contribuitor at the He4rt Developers community and a staff at the ConexãoTI community.',
     ],
     techs: ['Angular', 'TypeScript', 'Java', 'Docker', 'Git', 'Spring Boot'],

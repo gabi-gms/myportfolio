@@ -2,8 +2,9 @@ import type { IconType } from 'react-icons';
 import type { Icon } from '@phosphor-icons/react';
 export interface TechItem {
   name: string;
-  category: 'front' | 'back' | 'tools' | 'learning';
+  category: 'front' | 'back' | 'tools';
   icon: IconType;
+  main?: boolean;
 }
 
 export interface ExperienceItem {
