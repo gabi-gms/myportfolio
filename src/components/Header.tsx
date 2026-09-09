@@ -1,6 +1,6 @@
 import { MoonIcon } from '@phosphor-icons/react';
 import Starfield from './Starfield';
-import selene from '../assets/selene.svg';
+import selene from '../assets/selene.png';
 import { ui } from '../data/content';
 import ActionLink from './ActionLink';
 

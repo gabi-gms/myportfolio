@@ -6,7 +6,7 @@ import Section from './components/Section';
 // import { printConsoleEgg } from './utils/consoleEgg';
 import { ui, techs, projects } from './data/content';
 
-// import About from './sections/About';
+import About from './sections/About';
 import TechStack from './sections/TechStack';
 import Education from './sections/Education';
 import Experience from './sections/Experience';
@@ -26,34 +26,34 @@ export default function App() {
       <main id="top">
         <Header />
 
-        {/* <Section id="about"  index="01" eyebrow="quem escreve" title="Sobre" path="~/about">
+        <Section id="about"  index="01" eyebrow={ui.eyebrows.about} title={ui.sectionTitles.about} path="~/about" raised>
           <About />
-        </Section> */}
+        </Section>
 
-        <Section  id="projects" index="04" eyebrow={ui.eyebrows.projects} title={ui.sectionTitles.projects} path="./projects "
+        <Section  id="projects" index="02" eyebrow={ui.eyebrows.projects} title={ui.sectionTitles.projects} path="./projects "
           meta={`${projects.length} projetos`} 
         >
           <Projects />
-        </Section>
+        </Section>    
 
-        <Section id="tech" index="02" eyebrow={ui.eyebrows.tech} title={ui.sectionTitles.tech} path="./toolkit" 
+         <Section id="tech" index="03" eyebrow={ui.eyebrows.tech} title={ui.sectionTitles.tech} path="./toolkit" 
           meta={`${techs.length} itens`} raised
         >
           <TechStack />
-        </Section>
+        </Section> 
 
-        <Section id="experience" index="03" eyebrow={ui.eyebrows.experience} title={ui.sectionTitles.experience} path="./experience" >
+        <Section id="experience" index="05" eyebrow={ui.eyebrows.experience} title={ui.sectionTitles.experience} path="./experience" >
           <Experience />
         </Section>
 
-        <Section id="education" index="05" eyebrow={ui.eyebrows.education} title={ui.sectionTitles.education} path="./education" raised
-        >
-          <Education />
-        </Section>
-
-        <Section  id="interests"  index="06" eyebrow={ui.eyebrows.interests} title={ui.sectionTitles.interests} path="./interests"  >
+        <Section  id="interests"  index="06" eyebrow={ui.eyebrows.interests} title={ui.sectionTitles.interests} path="./interests"  raised>
           <Interests />
         </Section>
+
+        <Section id="education" index="04" eyebrow={ui.eyebrows.education} title={ui.sectionTitles.education} path="./education" 
+        >
+          <Education />
+        </Section>  
 
         <Section id="contact" index="07" eyebrow={ui.eyebrows.contact} title={ui.sectionTitles.contact} path="./contact" raised>
           <Contact />

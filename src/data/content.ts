@@ -17,7 +17,7 @@ import {
 
 export const ui = {
   sectionTitles: {
-    about: 'ABOUTME',
+    about: 'I am All This and More',
     tech: 'Technical Toolkit',
     experience: 'My Timeline',
     projects: 'Opensource',
@@ -27,7 +27,7 @@ export const ui = {
   },
   eyebrows: {
     header: 'ready player one',
-    about: 'Who I am',
+    about: 'hopes1x to Gabi Leonor',
     tech: 'Architecture & Syntax',
     experience: 'Experience',
     projects: 'Selected Work',
@@ -74,8 +74,15 @@ export const ui = {
 };
 
 export const about = {
-  intro: 'Um parágrafo sobre quem você é profissionalmente.',
-  detail: 'Um segundo parágrafo — o que te move, como você trabalha.',
+  lead: `Full-stack developer. I work in Java and Angular, and I spent a year helping build a RISC-V chip, 
+  which turned out to be the best way to understand what runs underneath everything else I had written.`,
+  paragraphs: [
+    `Most of my professional work was front-end: Angular and TypeScript, keeping production systems running. `,
+    `I am building on the other side now (Spring Boot, Java, PostgreSQL), and the decisions about how services talk to each other.
+    I am drawn to systems where being right matters more than being new: health, scientific computing, anything where a wrong answer costs something`
+  ],
+  quote: `In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. 
+  You use a combination of science, art, and craft to determine what to do with them.`,
 };
 
 export const techs: TechItem[] = [
