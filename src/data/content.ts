@@ -68,6 +68,8 @@ export const ui = {
   },
   footer: {
     credit: 'Gabi Leonor. All Rights Reserved.',
+    version: 'v1.0.0',
+    tag: 'beta',
   },
 };
 
