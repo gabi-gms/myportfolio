@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Section from './components/Section';
-import { printConsoleEgg } from './utils/consoleEgg';
+// import { printConsoleEgg } from './utils/consoleEgg';
 import { ui, techs, projects } from './data/content';
 
 // import About from './sections/About';
@@ -15,9 +15,9 @@ import Contact from './sections/Contact';
 import Projects from './sections/Projects';
 
 export default function App() {
-  useEffect(() => {
-    printConsoleEgg();
-  }, []);
+  // useEffect(() => {
+  //   printConsoleEgg();
+  // }, []);
 
   return (
     <>

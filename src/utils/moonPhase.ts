@@ -10,13 +10,13 @@ export interface MoonPhase {
 
 const PHASES: MoonPhase[] = [
   { icon: CircleIcon,     weight: 'regular', flip: false, name: 'new moon' },
-  { icon: MoonIcon,       weight: 'regular', flip: false, name: 'concave crescent' },
-  { icon: CircleHalfIcon, weight: 'fill',    flip: false, name: 'crescent moon' },
-  { icon: MoonIcon,       weight: 'fill',    flip: false, name: 'crescente gibosa' },
+  { icon: MoonIcon,       weight: 'regular', flip: false, name: 'waxing crescent' },
+  { icon: CircleHalfIcon, weight: 'fill',    flip: false, name: 'first quarter' },
+  { icon: MoonIcon,       weight: 'fill',    flip: false, name: 'waxing gibbous' },
   { icon: CircleIcon,     weight: 'fill',    flip: false, name: 'full moon' },
   { icon: MoonIcon,       weight: 'fill',    flip: true,  name: 'waning gibbous' },
   { icon: CircleHalfIcon, weight: 'fill',    flip: true,  name: 'last quarter' },
-  { icon: MoonIcon,       weight: 'regular', flip: true,  name: 'waning concave' },
+  { icon: MoonIcon,       weight: 'regular', flip: true,  name: 'waning crescent' },
 ];
 
 const SYNODIC_MONTH = 29.53058867;
