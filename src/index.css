@@ -23,6 +23,7 @@
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
   --container-shell: 72rem;
+  --spacing-nav: 7rem;
 }
 
 @layer base {

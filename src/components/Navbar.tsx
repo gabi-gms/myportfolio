@@ -7,7 +7,7 @@ import { useTheme } from '../hooks/useTheme';
 const ids = navItems.map((item) => item.id);
 
 export default function Navbar() {
-  const activeId = useScrollSpy(ids);
+  const [activeId, select] = useScrollSpy(ids);
   const { theme, toggle } = useTheme();
 
   return (
@@ -36,11 +36,12 @@ export default function Navbar() {
           {navItems.map((item) => (
             <li key={item.id}>
               <a
+                onClick={() => select(item.id)}
                 href={`#${item.id}`}
                 className={`block rounded px-2.5 py-2 font-mono text-xs transition-colors ${
                   activeId === item.id
                     ? 'text-luna'
-                    : 'text-moon-muted hover:text-moon'
+                    : 'text-moon-muted hover:text-secondary/80 '
                 }`}
                 aria-current={activeId === item.id ? 'true' : undefined}
               >

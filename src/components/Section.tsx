@@ -24,7 +24,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`scroll-mt-20 py-24 border-b border-edge/10 ${raised ? 'bg-surface' : 'bg-bg'}`}>
+      className={`scroll-mt-nav py-24 border-b border-edge/10 ${raised ? 'bg-surface' : 'bg-bg'}`}>
       <div className="relative overflow-hidden">
         <div className="relative mx-auto max-w-shell px-6 pb-8 lg:px-10 ">
           <div className="flex items-start justify-between gap-6">

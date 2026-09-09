@@ -42,15 +42,15 @@ export default function App() {
           <TechStack />
         </Section> 
 
-        <Section id="experience" index="05" eyebrow={ui.eyebrows.experience} title={ui.sectionTitles.experience} path="./experience" >
+        <Section id="experience" index="04" eyebrow={ui.eyebrows.experience} title={ui.sectionTitles.experience} path="./experience" >
           <Experience />
         </Section>
 
-        <Section  id="interests"  index="06" eyebrow={ui.eyebrows.interests} title={ui.sectionTitles.interests} path="./interests"  raised>
+        <Section  id="interests"  index="05" eyebrow={ui.eyebrows.interests} title={ui.sectionTitles.interests} path="./interests"  raised>
           <Interests />
         </Section>
 
-        <Section id="education" index="04" eyebrow={ui.eyebrows.education} title={ui.sectionTitles.education} path="./education" 
+        <Section id="education" index="06" eyebrow={ui.eyebrows.education} title={ui.sectionTitles.education} path="./education" 
         >
           <Education />
         </Section>  
