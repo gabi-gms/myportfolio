@@ -6,7 +6,7 @@ import type {
   InterestItem,
   Social,
 } from './types';
-import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo, PiCoffee, PiRepeat, PiBrain, } from 'react-icons/pi';
+import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo, PiCoffee, PiRepeat, PiBrain, PiGraduationCap, PiCertificate, PiCpu, PiChartLine} from 'react-icons/pi';
 import {
   SiAngular, SiReact, SiNextdotjs, SiTypescript, SiJavascript,
   SiHtml5, SiCss, SiTailwindcss,
@@ -186,9 +186,29 @@ export const projects: ProjectItem[] = [
 
 export const education: EducationItem[] = [
   {
-    degree: 'Curso',
-    institution: 'Instituição',
-    period: '2020 — 2024',
+    degree: 'Technologist in Data Science',
+    institution: 'Cruzeiro do Sul Virtual',
+    period: '2026 — present',
+    icon: PiChartLine,
+    current: true,
+  },
+  {
+    degree: 'Microelectronics Residency',
+    institution: 'CI Inovador — UFRGS / Softex',
+    period: '2024 — 2025',
+    icon: PiCpu,
+  },
+  {
+    degree: 'BSc in Information Systems',
+    institution: 'Universidade de Uberaba',
+    period: '2017 — 2024',
+    icon: PiGraduationCap,
+  },
+  {
+    degree: 'AI Specialist Track',
+    institution: 'Santander Digital Immersion',
+    period: '2026',
+    icon: PiCertificate,
   },
 ];
 

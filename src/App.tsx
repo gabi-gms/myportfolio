@@ -8,7 +8,7 @@ import { ui, techs, projects } from './data/content';
 
 import About from './sections/About';
 import TechStack from './sections/TechStack';
-import Education from './sections/Education';
+// import Education from './sections/Education';
 import Experience from './sections/Experience';
 import Interests from './sections/Interests';
 import Contact from './sections/Contact';
@@ -50,12 +50,12 @@ export default function App() {
           <Interests />
         </Section>
 
-        <Section id="education" index="06" eyebrow={ui.eyebrows.education} title={ui.sectionTitles.education} path="./education" 
+        {/* <Section id="education" index="06" eyebrow={ui.eyebrows.education} title={ui.sectionTitles.education} path="./education" 
         >
           <Education />
-        </Section>  
+        </Section>   */}
 
-        <Section id="contact" index="07" eyebrow={ui.eyebrows.contact} title={ui.sectionTitles.contact} path="./contact" raised>
+        <Section id="contact" index="06" eyebrow={ui.eyebrows.contact} title={ui.sectionTitles.contact} path="./contact" >
           <Contact />
         </Section>
       </main>

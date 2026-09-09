@@ -30,6 +30,8 @@ export interface EducationItem {
   degree: string;
   institution: string;
   period: string;
+  icon: IconType;
+  current?: boolean;
   note?: string;
 }
 

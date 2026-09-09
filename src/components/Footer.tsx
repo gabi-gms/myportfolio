@@ -8,7 +8,7 @@ export default function Footer() {
     const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-edge/20 py-10">
+    <footer className="py-10">
       <div className="mx-auto flex max-w-shell flex-col items-center gap-8 px-6 text-center sm:flex-row sm:justify-between sm:text-left lg:px-10">
         <p className="flex items-center justify-center gap-2.5 font-mono text-xs text-moon-muted/70 sm:justify-start">
           <span className="relative flex h-1.5 w-1.5" aria-hidden="true">
