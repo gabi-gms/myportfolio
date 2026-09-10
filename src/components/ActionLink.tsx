@@ -11,9 +11,9 @@ const base =
 
 const variants = {
   primary:
-    'border-luna bg-luna text-bg hover:border-secondary transition-all duration-400 transition-colors hover:bg-secondary',
+    'border-luna bg-luna text-bg hover:border-accent transition-all duration-400 transition-colors hover:bg-accent hover:text-bg',
   secondary:
-    'border-accent text-accent transition-all duration-400 transition-colors hover:border-luna hover:bg-luna-muted hover:text-luna',
+    'border-secondary text-secondary transition-all duration-400 transition-colors hover:border-luna hover:bg-luna-muted hover:text-luna',
 } as const;
 
 export default function ActionLink({

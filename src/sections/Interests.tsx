@@ -6,16 +6,16 @@ export default function Interests() {
       {interests.map(({ icon: Icon, label }) => (
         <li
           key={label}
-          className="group @container rounded-lg border border-edge/60 bg-surface p-7 transition-colors hover:border-secondary/30"
+          className="group @container rounded-lg border border-edge/60 bg-surface p-7 transition-colors hover:border-accent/30"
         >
           <div className="flex flex-col items-center gap-4 text-center @[22rem]:flex-row @[22rem]:items-start @[22rem]:gap-6 @[22rem]:text-left">
             <Icon
-              className="shrink-0 text-4xl text-luna transition-all duration-400 group-hover:scale-120 group-hover:text-secondary @[22rem]:mt-1"
+              className="shrink-0 text-4xl text-luna transition-all duration-400 group-hover:scale-120 group-hover:text-accent @[22rem]:mt-1"
               aria-hidden="true"
             />
 
             <div>
-              <h3 className="font-mono uppercase text-sm text-luna transition-colors group-hover:text-secondary">
+              <h3 className="font-mono uppercase text-sm text-luna transition-colors group-hover:text-accent">
                 {label}
               </h3>
             </div>

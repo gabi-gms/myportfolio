@@ -12,11 +12,11 @@ export default function Footer() {
       <div className="mx-auto flex max-w-shell flex-col items-center gap-8 px-6 text-center sm:flex-row sm:justify-between sm:text-left lg:px-10">
         <p className="flex items-center justify-center gap-2.5 font-mono text-xs text-moon-muted/70 sm:justify-start">
           <span className="relative flex h-1.5 w-1.5" aria-hidden="true">
-            <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-60 motion-safe:animate-ping" />
-            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
+            <span className="absolute inline-flex h-full w-full rounded-full bg-secondary opacity-60 motion-safe:animate-ping" />
+            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-secondary" />
           </span>
           {ui.footer.version}
-          <span className="rounded border border-accent/40 bg-accent/10 px-1.5 py-0.5 text-[0.5rem] uppercase tracking-widest text-accent">
+          <span className="rounded border border-secondary/40 bg-secondary/10 px-1.5 py-0.5 text-[0.5rem] uppercase tracking-widest text-secondary">
             {ui.footer.tag}
           </span>
         </p>
@@ -29,7 +29,7 @@ export default function Footer() {
         >
           <MoonIcon
             weight={moon.weight}
-            className={`h-4 w-4 text-accent ${moon.flip ? '-scale-x-100' : ''}`}
+            className={`h-4 w-4 text-secondary ${moon.flip ? '-scale-x-100' : ''}`}
             aria-hidden="true"
           />
           <span>{moon.name}</span>

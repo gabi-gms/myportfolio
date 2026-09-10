@@ -1,8 +1,8 @@
 import { MoonIcon } from '@phosphor-icons/react';
 import Starfield from './Starfield';
-import selene from '../assets/selene.png';
 import { ui } from '../data/content';
 import ActionLink from './ActionLink';
+import Portrait from './Portrait';
 
 export default function Header() {
   return (
@@ -22,12 +22,12 @@ export default function Header() {
           />
 
           <div className="relative mx-auto w-full max-w-shell px-6 lg:px-14">
-            <p className="mb-5 flex items-center gap-2 font-mono text-[0.9rem] tracking-widest text-accent">
+            <p className="mb-5 flex items-center gap-2 font-mono text-[0.9rem] tracking-widest uppercase text-secondary">
               <MoonIcon size={15} weight="fill" />
               {ui.eyebrows.header}
             </p>
 
-            <h1 className="font-display text-5xl leading-[1.05] sm:text-5xl lg:text-7xl">
+            <h1 className="font-display text-5xl leading-[1.05] sm:text-4xl lg:text-7xl">
               {ui.header.name}
             </h1>
 
@@ -44,19 +44,7 @@ export default function Header() {
           </div>
         </div>
 
-                <figure className="relative hidden lg:block lg:w-full">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(closest-side,var(--color-bg)_0%,var(--color-bg)_55%,transparent_100%)]"
-          />
-          <img
-            src={selene}
-            alt="Ilustração de um perfil feminino com estrelas nos cabelos"
-            width={600}
-            height={900}
-            className="relative mx-auto max-h-[70vh] w-full object-contain"
-          />
-        </figure>
+        <Portrait className="mx-auto hidden w-full max-w-60 lg:block xl:max-w-xs" />
       </div>
     </header>
   );

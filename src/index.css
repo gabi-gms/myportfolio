@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Nothing+You+Could+Do:wght@400&display=swap&family=Chakra+Petch:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&family=Nothing+You+Could+Do:wght@400&display=swap&family=Chakra+Petch:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -14,11 +14,11 @@
 
   /* Acentos */
   --color-luna: #E4BE65;
-  --color-secondary:  #FD8799;
-  --color-accent: #50A6BA;
+  --color-secondary:  #AC4859;
+  --color-accent: #31AFD4;
 
   /* Tipografia */
-  --font-display: "Almendra", serif;
+  --font-display: "Story Script", sans-serif;
   --font-sans: "IBM Plex Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 

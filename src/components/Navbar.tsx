@@ -41,7 +41,7 @@ export default function Navbar() {
                 className={`block rounded px-2.5 py-2 font-mono text-xs transition-colors ${
                   activeId === item.id
                     ? 'text-luna'
-                    : 'text-moon-muted hover:text-secondary/80 '
+                    : 'text-moon-muted hover:text-accent '
                 }`}
                 aria-current={activeId === item.id ? 'true' : undefined}
               >

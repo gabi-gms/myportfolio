@@ -26,7 +26,7 @@ export const ui = {
     contact: 'Let\'s build something',
   },
   eyebrows: {
-    header: 'ready player one',
+    header: 'women in tech',
     about: 'hopes1x to Gabi Leonor',
     tech: 'Architecture & Syntax',
     experience: 'Experience',
@@ -40,15 +40,8 @@ export const ui = {
     tagline: 'Junior Fullstack Developer with hands-on experience building interfaces with Angular, React, TypeScript and Java. Uses Tailwind CSS and shadcn/ui in personal projects, with Git in daily workflow.',
     ctaPrimary: 'selected projects',
     ctaSecondary: 'talk to me →',
-    role: 'Desenvolvedora Front-end',
-  },
-  about: {
-    statusLabel: 'status',
-    statusItems: [
-      'disponível para novos projetos',
-      'produtividade noturna',
-      'baseada em Minas Gerais',
-    ],
+    portraitAlt: 'Gabi Leonor',
+    portraitTag: 'fullstack dev',
   },
   tech: {
     main: 'main',
@@ -222,7 +215,7 @@ export const interests: InterestItem[] = [
 ];
 
 export const email = 'gabi.gomes.gr@gmail.com';
-export const resumeUrl = '/curriculo.pdf';
+export const resumeUrl = '/Gabriella-Rodrigues-Software-Developer.pdf';
 
 export const socials: Social[] = [
   { label: 'github', href: 'https://github.com/gabi-gms', icon: PiGithubLogo },

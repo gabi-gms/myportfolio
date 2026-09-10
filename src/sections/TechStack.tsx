@@ -41,12 +41,12 @@ export default function TechStack() {
         {visible.map(({ icon: Icon, name, main }) => (
           <li
             key={name}
-            className="group relative flex flex-col items-center gap-3 rounded-lg border border-edge/60 bg-surface p-5 text-center transition-colors hover:border-secondary/30"
+            className="group relative flex flex-col items-center gap-3 rounded-lg border border-edge/60 bg-surface p-5 text-center transition-colors hover:border-accent/30"
           >
             {main && filter !== 'main' && (
               <span className="absolute right-3 top-3 flex items-center">
                 <span
-                  className="h-1.5 w-1.5 rounded-full bg-luna shadow-[0_0_6px_var(--color-luna)] transition-colors group-hover:bg-secondary"
+                  className="h-1.5 w-1.5 rounded-full bg-luna shadow-[0_0_6px_var(--color-luna)] transition-colors group-hover:bg-accent"
                   aria-hidden="true"
                 />
                 <span className="sr-only">main stack</span>
@@ -54,10 +54,10 @@ export default function TechStack() {
             )}
 
             <Icon
-              className="shrink-0 text-3xl text-luna transition-all duration-400 group-hover:scale-120 group-hover:text-secondary"
+              className="shrink-0 text-3xl text-luna transition-all duration-400 group-hover:scale-120 group-hover:text-accent"
               aria-hidden="true"
             />
-            <span className="font-mono uppercase text-sm text-luna transition-colors group-hover:text-secondary">
+            <span className="font-mono uppercase text-sm text-luna transition-colors group-hover:text-accent">
               {name}
             </span>
           </li>

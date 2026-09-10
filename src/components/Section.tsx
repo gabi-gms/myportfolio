@@ -34,7 +34,7 @@ export default function Section({
             </p>
 
             <div className="hidden text-right font-mono text-xs sm:block">
-              <p className="text-accent">{path}</p>
+              <p className="text-secondary">{path}</p>
               {meta && <p className="mt-1 text-edge">{meta}</p>}
             </div>
           </div>

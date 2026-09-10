@@ -29,14 +29,14 @@ export default function Contact() {
               <a  href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-center justify-center gap-3 rounded-lg border border-edge/60 bg-surface px-4 py-5 transition-colors hover:border-secondary/30"
+                className="group flex items-center justify-center gap-3 rounded-lg border border-edge/60 bg-surface px-4 py-5 transition-colors hover:border-accent/30"
               >
                 <Icon
                   weight="fill"
-                  className="shrink-0 text-xl text-luna transition-colors group-hover:text-secondary"
+                  className="shrink-0 text-xl text-luna transition-colors group-hover:text-accent"
                   aria-hidden="true"
                 />
-                <span className="font-mono text-sm uppercase tracking-[0.18em] text-luna transition-colors group-hover:text-secondary">
+                <span className="font-mono text-sm uppercase tracking-[0.18em] text-luna transition-colors group-hover:text-accent">
                   {label}
                 </span>
               </a>

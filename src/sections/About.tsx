@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="grid items-start gap-12 lg:grid-cols-[1.7fr_1fr] lg:gap-16">
       <div>
-        <p className="text-base leading-relaxed text-accent sm:text-lg">
+        <p className="text-base leading-relaxed text-secondary sm:text-lg">
           {about.lead}
         </p>
 
