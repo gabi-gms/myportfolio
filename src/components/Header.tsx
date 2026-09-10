@@ -21,13 +21,13 @@ export default function Header() {
             className="pointer-events-none absolute -inset-x-16 -inset-y-24 bg-[radial-gradient(closest-side,var(--color-bg)_0%,var(--color-bg)_45%,transparent_100%)]"
           />
 
-          <div className="relative mx-auto w-full max-w-shell px-6 lg:px-14">
-            <p className="mb-5 flex items-center gap-2 font-mono text-[0.9rem] tracking-widest uppercase text-secondary">
+          <div className="relative flex flex-col items-center text-center lg:items-start lg:text-left">
+            <p className="mb-5 flex items-center justify-center gap-2 font-mono text-[0.7rem] uppercase tracking-widest text-secondary lg:justify-start">
               <MoonIcon size={15} weight="fill" />
               {ui.eyebrows.header}
             </p>
 
-            <h1 className="font-display text-5xl leading-[1.05] sm:text-4xl lg:text-7xl">
+            <h1 className="font-display text-4xl leading-[1.05] sm:text-4xl lg:text-6xl">
               {ui.header.name}
             </h1>
 
@@ -35,7 +35,7 @@ export default function Header() {
               {ui.header.tagline}
             </p>
 
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
               <ActionLink href="#projects">{ui.header.ctaPrimary}</ActionLink>
               <ActionLink href="#contact" variant="secondary">
                 {ui.header.ctaSecondary}
@@ -44,7 +44,7 @@ export default function Header() {
           </div>
         </div>
 
-        <Portrait className="mx-auto hidden w-full max-w-60 lg:block xl:max-w-xs" />
+        <Portrait className="mx-auto w-full max-w-60 xl:max-w-xs" />
       </div>
     </header>
   );

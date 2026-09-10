@@ -7,7 +7,7 @@ type ActionLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 };
 
 const base =
-  'inline-flex items-center gap-2 rounded-md border px-8 py-4 font-mono text-sm tracking-wide transition-colors';
+  'inline-flex items-center gap-2 rounded-md border px-6 py-4 font-mono text-sm tracking-wide transition-colors';
 
 const variants = {
   primary:

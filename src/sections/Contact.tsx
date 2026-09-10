@@ -4,13 +4,13 @@ import ActionLink from '../components/ActionLink';
 
 export default function Contact() {
   return (
-    <div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
+    <div className="grid gap-14 lg:grid-cols-2 lg:gap-20 items-center justify-center lg:justify-start">
       <div>
-        <p className="max-w-md text-lg leading-relaxed text-moon-muted">
+        <p className="max-full text-lg leading-relaxed text-moon-muted" >
           {ui.contact.intro}
         </p>
 
-        <div className="mt-10 flex flex-wrap items-center gap-4">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
           <ActionLink href={resumeUrl} download  icon={DownloadSimpleIcon}>
             {ui.contact.resumeCta}
           </ActionLink>
@@ -21,7 +21,7 @@ export default function Contact() {
       </div>
 
       <div>
-                <ul className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <ul className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
           {socials.map(({ icon: Icon, label, href }) => (
             <li key={label}>
               
