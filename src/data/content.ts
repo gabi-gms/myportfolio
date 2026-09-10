@@ -35,6 +35,11 @@ export const ui = {
     interests: 'Behind the Technology',
     contact: 'Get in Touch',
   },
+    nav: {
+    backToTop: 'back to top',
+    open: 'open menu',
+    close: 'close menu',
+  },
   header: {
     name: 'Hello, Gabi here!',
     tagline: 'Junior Fullstack Developer with hands-on experience building interfaces with Angular, React, TypeScript and Java. Uses Tailwind CSS and shadcn/ui in personal projects, with Git in daily workflow.',
