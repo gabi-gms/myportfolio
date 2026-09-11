@@ -47,7 +47,7 @@ export default function Navbar() {
               <a
                 onClick={() => select(item.id)}
                 href={`#${item.id}`}
-                className={`block rounded px-2.5 py-2 font-mono text-xs transition-colors ${
+                className={`block rounded px-2.5 py-2 font-mono text-sm transition-colors ${
                   activeId === item.id
                     ? 'text-luna'
                     : 'text-moon-muted hover:text-accent'

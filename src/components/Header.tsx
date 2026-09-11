@@ -14,7 +14,7 @@ export default function Header() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 lg:max-w-[75%] items-center gap-14 px-6 lg:grid-cols-[3fr_2fr]">
+      <div className="relative mx-auto grid w-shell max-w-shell grid-cols-1 lg:max-w-shell items-center gap-14 px-6 lg:grid-cols-[3fr_2fr]">
         <div className="relative">
           <div
             aria-hidden="true"
@@ -27,7 +27,7 @@ export default function Header() {
               {ui.eyebrows.header}
             </p>
 
-            <h1 className="font-display text-4xl leading-[1.05] sm:text-4xl lg:text-6xl">
+            <h1 className="font-display text-6xl leading-[1.05] sm:text-6xl lg:text-7xl">
               {ui.header.name}
             </h1>
 

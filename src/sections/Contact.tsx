@@ -36,7 +36,7 @@ export default function Contact() {
                   className="shrink-0 text-xl text-luna transition-colors group-hover:text-accent"
                   aria-hidden="true"
                 />
-                <span className="font-mono text-sm uppercase tracking-[0.18em] text-luna transition-colors group-hover:text-accent">
+                <span className="font-mono text-sm uppercase  text-luna transition-colors group-hover:text-accent">
                   {label}
                 </span>
               </a>
