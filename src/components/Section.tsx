@@ -39,7 +39,7 @@ export default function Section({
             </div>
           </div>
 
-          <h2 className="mt-4 font-display text-4xl tracking-tight lg:text-5xl">
+          <h2 className="mt-4 font-title text-2xl tracking-tight lg:text-5xl">
             {title}
           </h2>
         </div>

@@ -9,7 +9,7 @@ export default function Portrait({ className = '' }: { className?: string }) {
         className="pointer-events-none absolute inset-0 translate-x-4 translate-y-4 rounded-lg border border-secondary/50"
       />
 
-      <div className="relative overflow-hidden rounded-lg border border-luna bg-elevated p-2">
+      <div className="relative overflow-hidden rounded-lg border border-luna bg-elevated p-2 ">
         <img
           src={portrait}
           alt={ui.header.portraitAlt}

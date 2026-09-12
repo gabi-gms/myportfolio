@@ -1,86 +1,114 @@
-import { projects } from '../data/content';
-import type { ProjectItem } from '../data/types';
+import { ArrowUpRight, Globe } from '@phosphor-icons/react';
+import { github, projects, ui } from '../data/content';
 
-function ProjectCard({ project }: { project: ProjectItem }) {
-  const { featured } = project;
-
-  return (
-    <article
-      className={`group relative flex flex-col overflow-hidden rounded-lg border bg-surface p-7 transition-colors ${
-        featured
-          ? 'border-luna/30 hover:border-luna/50 lg:col-span-2'
-          : 'border-edge/60 hover:border-edge'
-      }`}
-    >
-      {featured && (
-        <span
-          className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-luna/4 blur-2xl"
-          aria-hidden="true"
-        />
-      )}
-
-      <div className="relative flex flex-1 flex-col">
-        <div className="flex items-start justify-between gap-4">
-          <h3 className="font-display text-xl lg:text-2xl">{project.name}</h3>
-          {featured && (
-            <span className="shrink-0 font-mono text-[10px] tracking-widest text-luna/80">
-              ★ destaque
-            </span>
-          )}
-        </div>
-
-        <p className="mt-2 font-mono text-xs text-secondary">{project.tagline}</p>
-
-        <p className="mt-5 max-w-2xl flex-1 leading-relaxed text-moon-muted">
-          {project.description}
-        </p>
-
-        <ul className="mt-6 flex flex-wrap gap-2">
-          {project.techs.map((tech) => (
-            <li
-              key={tech}
-              className="rounded-full border border-edge/60 px-3 py-1 font-mono text-[10px] text-moon-muted"
-            >
-              {tech}
-            </li>
-          ))}
-        </ul>
-
-        {(project.repoUrl || project.liveUrl) && (
-          <div className="mt-6 flex flex-wrap items-center gap-5 border-t border-edge/60 pt-5">
-            {project.liveUrl && (
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="font-mono text-xs text-luna transition-opacity hover:opacity-70"
-              >
-                ver ao vivo →
-              </a>
-            )}
-            {project.repoUrl && (
-              <a
-                href={project.repoUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="font-mono text-xs text-moon-muted transition-colors hover:text-moon"
-              >
-                código →
-              </a>
-            )}
-          </div>
-        )}
-      </div>
-    </article>
-  );
-}
+const ACCENT = {
+  code: { dot: 'bg-luna', title: 'text-luna', border: 'border-luna' },
+  community: { dot: 'bg-secondary', title: 'text-secondary', border: 'border-secondary' },
+} as const;
 
 export default function Projects() {
   return (
-    <div className="grid gap-5 lg:grid-cols-2">
-      {projects.map((project) => (
-        <ProjectCard key={project.name} project={project} />
-      ))}
+    <div>
+      <ul className="grid gap-8 lg:grid-cols-2">
+        {projects.map(
+          ({ icon: Icon, title, role, year, category, description, tags, kind, repo, demo }, i) => {
+            const accent = ACCENT[kind];
+
+            return (
+              <li key={title} className="group relative">
+                <div
+                  aria-hidden="true"
+                  className={`pointer-events-none absolute inset-0 translate-x-2.5 translate-y-2.5 rounded-lg border ${accent.border} 
+                    transition-transform duration-400 group-hover:translate-x-1.5 group-hover:translate-y-1.5`}
+                />
+
+                <article className="relative flex h-full flex-col rounded-lg border border-edge bg-surface p-7">
+                  <div className="flex items-center justify-between gap-4">
+                    <p className="font-mono text-[11px] tracking-widest text-moon-muted">
+                      {String(i + 1).padStart(2, '0')} / {year}
+                    </p>
+                    <p className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-moon-muted">
+                      <span className={`h-1.5 w-1.5 rounded-full ${accent.dot}`} aria-hidden="true" />
+                      {category}
+                    </p>
+                  </div>
+
+                  <div className="mt-5 flex items-center gap-3">
+                    <Icon
+                      className={`shrink-0 text-2xl transition-colors ${accent.title}`}
+                      aria-hidden="true"
+                    />
+                    <h3 className={`font-title text-base transition-colors ${accent.title}`}>
+                      {title}
+                    </h3>
+                  </div>
+
+                  <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.18em] text-moon-muted">
+                    {role}
+                  </p>
+
+                  <p className="mt-6 flex-1 text-sm leading-relaxed text-moon-muted">
+                    {description}
+                  </p>
+
+                  <ul className="mt-6 flex flex-wrap gap-2">
+                    {tags.map((tag) => (
+                      <li
+                        key={tag}
+                        className="rounded-full border border-edge/60 px-3 py-1 font-mono text-[10px] text-moon-muted"
+                      >
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {(repo || demo) && (
+                    <div className="mt-6 flex items-center justify-between gap-4 border-t border-edge/60 pt-5">
+                      {demo ? (
+                        <a
+                          href={demo}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-moon transition-colors hover:text-secundary"
+                        >
+                          <Globe size={16} aria-hidden="true" />
+                          {ui.projects.demoLabel}
+                        </a>
+                      ) : (
+                        <span />
+                      )}
+
+                      {repo && (
+                        <a
+                          href={repo}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-moon transition-colors hover:text-secundary"
+                        >
+                          {ui.projects.repoLabel}
+                          <ArrowUpRight size={13} aria-hidden="true" />
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </article>
+              </li>
+            );
+          },
+        )}
+      </ul>
+
+      <div className="mt-10 flex justify-end">
+        <a
+          href={github.url}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-1.5 font-mono text-[11px] text-moon-muted transition-colors hover:text-secundary"
+        >
+          {ui.projects.githubCta}
+          <ArrowUpRight size={13} aria-hidden="true" />
+        </a>
+      </div>
     </div>
   );
 }

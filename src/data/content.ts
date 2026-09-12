@@ -6,7 +6,7 @@ import type {
   InterestItem,
   Social,
 } from './types';
-import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo, PiCoffee, PiRepeat, PiBrain, PiGraduationCap, PiCertificate, PiCpu, PiChartLine} from 'react-icons/pi';
+import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo, PiCoffee, PiRepeat, PiBrain, PiGraduationCap, PiCertificate, PiCpu, PiChartLine, PiCode, PiUsers} from 'react-icons/pi';
 import {
   SiAngular, SiReact, SiNextdotjs, SiTypescript, SiJavascript,
   SiHtml5, SiCss, SiTailwindcss,
@@ -17,13 +17,13 @@ import {
 
 export const ui = {
   sectionTitles: {
-    about: 'I am All This and More',
-    tech: 'Technical Toolkit',
+    about: 'ABOUTME',
+    tech: 'Tech & Tools',
     experience: 'My Timeline',
     projects: 'Opensource',
     education: 'Education',
-    interests: 'Behind the Technology',
-    contact: 'Let\'s build something',
+    interests: 'Passions',
+    contact: 'Get in Touch',
   },
   eyebrows: {
     header: 'women in tech',
@@ -33,7 +33,7 @@ export const ui = {
     projects: 'Selected Work',
     education: 'Qualifications',
     interests: 'Behind the Technology',
-    contact: 'Get in Touch',
+    contact: 'Let\'s build something',
   },
     nav: {
     backToTop: 'back to top',
@@ -41,7 +41,8 @@ export const ui = {
     close: 'close menu',
   },
   header: {
-    name: 'Hello, Gabi here!',
+    greating: 'Hello, ',
+    name: 'Gabi here!',
     tagline: 'Junior Fullstack Developer with hands-on experience building interfaces with Angular, React, TypeScript and Java. Uses Tailwind CSS and shadcn/ui in personal projects, with Git in daily workflow.',
     ctaPrimary: 'selected projects',
     ctaSecondary: 'talk to me →',
@@ -63,6 +64,11 @@ export const ui = {
     resumeCta: 'download resume',
     emailCta: 'send an email',
     socialsLabel: 'socials',
+  },
+  projects: {
+    demoLabel: 'preview site',
+    repoLabel: 'view source',
+    githubCta: 'all projects on github',
   },
   footer: {
     credit: 'Gabi Leonor. All Rights Reserved.',
@@ -173,14 +179,34 @@ export const experiences: ExperienceItem[] = [
 
 export const projects: ProjectItem[] = [
   {
-    name: 'Nome do projeto',
-    tagline: 'Uma linha do que ele faz.',
-    description: 'O problema que resolve e como você resolveu.',
-    techs: ['React', 'Tailwind'],
-    repoUrl: 'https://github.com/usuario/repo',
-    featured: true,
+    title: 'Project name',
+    role: 'fullstack developer',
+    year: '2026',
+    category: 'fullstack',
+    description:
+      'The problem it solves and how you solved it. Two or three lines is the right length here.',
+    tags: ['React', 'TypeScript', 'Tailwind'],
+    kind: 'code',
+    repo: 'https://github.com/seu-usuario/repo',
+    demo: 'https://exemplo.com',
+    icon: PiCode,
+  },
+  {
+    title: 'Talk title',
+    role: 'speaker',
+    year: '2026',
+    category: 'community',
+    description: 'What the talk was about and who it reached.',
+    tags: ['He4rt Developers'],
+    kind: 'community',
+    demo: 'https://...',
+    icon: PiUsers,
   },
 ];
+
+export const github = {
+  url: 'https://github.com/seu-usuario',
+};
 
 export const education: EducationItem[] = [
   {

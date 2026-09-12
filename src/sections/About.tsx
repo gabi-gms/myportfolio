@@ -18,7 +18,7 @@ export default function About() {
         </div>
 
         <blockquote className="mt-10 border-l-2 border-luna/60 pl-6">
-          <p className="font-display text-lg leading-relaxed text-luna sm:text-xl">
+          <p className="font-subtitle text-lg leading-relaxed text-luna sm:text-xl">
             “{about.quote}”
           </p>
         </blockquote>

@@ -26,7 +26,7 @@ export default function Experience() {
           <div className="grid gap-y-8 lg:grid-cols-[minmax(0,20rem)_1fr] lg:gap-x-16">
             <div>
               <p className="font-mono text-sm text-luna/80">{item.period}</p>
-              <h3 className="mt-3 font-display text-2xl leading-snug">
+              <h3 className="mt-3 font-title text-base leading-snug">
                 {item.title}
               </h3>
             </div>

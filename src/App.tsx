@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Section from './components/Section';
 // import { printConsoleEgg } from './utils/consoleEgg';
-import { ui, techs, projects } from './data/content';
+import { ui, projects } from './data/content';
 
 import About from './sections/About';
 import TechStack from './sections/TechStack';
@@ -31,13 +31,12 @@ export default function App() {
         </Section>
 
         <Section  id="projects" index="02" eyebrow={ui.eyebrows.projects} title={ui.sectionTitles.projects} path="./projects "
-          meta={`${projects.length} projetos`} 
+          meta={`${projects.length} projects`} 
         >
           <Projects />
         </Section>    
 
-         <Section id="tech" index="03" eyebrow={ui.eyebrows.tech} title={ui.sectionTitles.tech} path="./toolkit" 
-          meta={`${techs.length} itens`} raised
+         <Section id="tech" index="03" eyebrow={ui.eyebrows.tech} title={ui.sectionTitles.tech} path="./toolkit" raised
         >
           <TechStack />
         </Section> 

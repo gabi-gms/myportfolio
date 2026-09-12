@@ -22,12 +22,13 @@ export default function Header() {
           />
 
           <div className="relative flex flex-col items-center text-center lg:items-start lg:text-left">
-            <p className="mb-5 flex items-center justify-center gap-2 font-mono text-[0.7rem] uppercase tracking-widest text-secondary lg:justify-start">
+            <p className="mb-5 flex items-center justify-center gap-2 font-mono text-xs uppercase tracking-widest text-secondary lg:justify-start">
               <MoonIcon size={15} weight="fill" />
               {ui.eyebrows.header}
             </p>
 
-            <h1 className="font-display text-6xl leading-[1.05] sm:text-6xl lg:text-7xl">
+            <h1 className="font-title text-4xl leading-[1.05] sm:text-4xl lg:text-6xl">
+              {ui.header.greating}<br />
               {ui.header.name}
             </h1>
 

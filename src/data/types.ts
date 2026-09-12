@@ -17,13 +17,16 @@ export interface ExperienceItem {
 }
 
 export interface ProjectItem {
-  name: string;
-  tagline: string;
+  title: string;
+  role: string;
+  year: string;
+  category: string;
   description: string;
-  techs: string[];
-  repoUrl?: string;
-  liveUrl?: string;
-  featured?: boolean;
+  tags: string[];
+  kind: 'code' | 'community';
+  icon: IconType;
+  repo?: string;
+  demo?: string;
 }
 
 export interface EducationItem {
