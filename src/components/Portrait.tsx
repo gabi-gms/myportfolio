@@ -3,10 +3,10 @@ import { ui } from '../data/content';
 
 export default function Portrait({ className = '' }: { className?: string }) {
   return (
-    <figure className={`relative ${className}`}>
+    <figure className={`group relative ${className}`}>
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 translate-x-4 translate-y-4 rounded-lg border border-secondary/50"
+        className="pointer-events-none absolute inset-0 translate-x-4 translate-y-4 rounded-lg border border-secondary/50 transition-transform duration-400 group-hover:translate-x-2 group-hover:translate-y-2"
       />
 
       <div className="relative overflow-hidden rounded-lg border border-luna bg-elevated p-2 ">
