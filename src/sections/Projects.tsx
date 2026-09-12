@@ -1,4 +1,4 @@
-import { ArrowUpRight, Globe } from '@phosphor-icons/react';
+import { ArrowUpRightIcon, Globe } from '@phosphor-icons/react';
 import { github, projects, ui } from '../data/content';
 
 const ACCENT = {
@@ -69,7 +69,7 @@ export default function Projects() {
                           href={demo}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-moon transition-colors hover:text-secundary"
+                          className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-moon transition-colors hover:text-accent"
                         >
                           <Globe size={16} aria-hidden="true" />
                           {ui.projects.demoLabel}
@@ -83,10 +83,10 @@ export default function Projects() {
                           href={repo}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-moon transition-colors hover:text-secundary"
+                          className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-moon transition-colors hover:text-accent"
                         >
                           {ui.projects.repoLabel}
-                          <ArrowUpRight size={13} aria-hidden="true" />
+                          <ArrowUpRightIcon size={13} aria-hidden="true" />
                         </a>
                       )}
                     </div>
@@ -103,10 +103,10 @@ export default function Projects() {
           href={github.url}
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-1.5 font-mono text-[11px] text-moon-muted transition-colors hover:text-secundary"
+          className="flex items-center gap-1.5 font-mono text-[11px] text-moon-muted transition-colors hover:text-accent"
         >
           {ui.projects.githubCta}
-          <ArrowUpRight size={13} aria-hidden="true" />
+          <ArrowUpRightIcon size={13} aria-hidden="true" />
         </a>
       </div>
     </div>

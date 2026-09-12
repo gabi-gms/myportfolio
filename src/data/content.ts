@@ -35,7 +35,7 @@ export const ui = {
     interests: 'Behind the Technology',
     contact: 'Let\'s build something',
   },
-    nav: {
+  nav: {
     backToTop: 'back to top',
     open: 'open menu',
     close: 'close menu',
