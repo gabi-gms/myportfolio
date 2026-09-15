@@ -6,7 +6,7 @@ import Portrait from './Portrait';
 
 export default function Header() {
   return (
-    <header className="relative flex min-h-screen items-center overflow-hidden border-b border-edge/20">
+    <header className="relative flex min-h-screen pt-20 pb-10 items-center overflow-hidden border-b border-edge/20">
       <Starfield />
 
       <div
