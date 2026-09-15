@@ -6,7 +6,8 @@ import type {
   InterestItem,
   Social,
 } from './types';
-import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo, PiCoffee, PiRepeat, PiBrain, PiGraduationCap, PiCertificate, PiCpu, PiChartLine, PiCode, PiUsers} from 'react-icons/pi';
+import { PiRocket, PiAtom, PiBooks, PiCamera, PiGithubLogo, PiLinkedinLogo, PiInstagramLogo, PiYoutubeLogo, 
+  PiCoffee, PiRepeat, PiBrain, PiGraduationCap, PiCertificate, PiCpu, PiChartLine, PiCode} from 'react-icons/pi';
 import {
   SiAngular, SiReact, SiNextdotjs, SiTypescript, SiJavascript,
   SiHtml5, SiCss, SiTailwindcss,
@@ -179,29 +180,29 @@ export const experiences: ExperienceItem[] = [
 
 export const projects: ProjectItem[] = [
   {
-    title: 'Project name',
-    role: 'fullstack developer',
+    title: 'Personal Portfolio',
+    role: 'frontend developer',
     year: '2026',
-    category: 'fullstack',
+    category: 'frontend',
     description:
-      'The problem it solves and how you solved it. Two or three lines is the right length here.',
-    tags: ['React', 'TypeScript', 'Tailwind'],
+      'My own corner of the internet. Built from scratch to hold the work I care about, with a visual identity I designed myself.',
+    tags: ['React', 'TypeScript', 'Tailwind', 'Vite', 'shadcn/ui'],
     kind: 'code',
-    repo: 'https://github.com/seu-usuario/repo',
-    demo: 'https://exemplo.com',
+    repo: 'https://github.com/gabi-gms/myportfolio',
+    demo: 'https://gabileonor-portfolio.vercel.app/',
     icon: PiCode,
   },
-  {
-    title: 'Talk title',
-    role: 'speaker',
-    year: '2026',
-    category: 'community',
-    description: 'What the talk was about and who it reached.',
-    tags: ['He4rt Developers'],
-    kind: 'community',
-    demo: 'https://...',
-    icon: PiUsers,
-  },
+  // {
+  //   title: 'Talk title',
+  //   role: 'speaker',
+  //   year: '2026',
+  //   category: 'community',
+  //   description: 'What the talk was about and who it reached.',
+  //   tags: ['He4rt Developers'],
+  //   kind: 'community',
+  //   demo: 'https://...',
+  //   icon: PiUsers,
+  // },
 ];
 
 export const github = {
